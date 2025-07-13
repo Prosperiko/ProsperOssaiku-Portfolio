@@ -1,0 +1,136 @@
+
+/*   MOOOOOOOOOOOOO VVEEEEEEEEERRRRRRRRR */
+
+    /* .moa{
+        padding: 20px;
+        padding-left: 40px;
+        border: 1px solid orange;
+        margin-left: 20px;
+        /* width: max-content; */
+        /* justify-self: center;
+        align-self: center; 
+        min-width: 0px;
+        word-wrap: break-word;
+    } */
+    
+@media screen  and (max-width:421px) and (min-width: 0px){
+
+}
+
+/*    MOBILE VERSION   */
+/* 
+@media (max-width : 600px) {
+
+    .burger-menu-btn{
+        display: block;
+        width: 50px;
+        /* height: 50px; */
+        /* background-image: url('/img/finance-16.jpg'), url('/img/utilities.webp');
+        background-repeat: no-repeat;
+        background-position: center, center left 50px;
+    } */
+
+    /* .burger-menu{ 
+        display: block;
+        position: fixed;
+        width: 60vw;
+        height: 20vh;
+        z-index: 900;
+        background-color: #752b2b;
+    }
+
+    .burger-menu ul {
+        width: 20%;
+        height: calc(100vh - 60px);
+        /* padding-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .burger-menu ul li {
+        flex-basis: 100%;
+        border-top: 2px solid black ;
+    }
+
+    .burger-menu ul li a {
+        display: block;
+        height: 100%;
+        font-size: 3rem;
+        padding: 30px 0;
+        flex-basis: 100%;
+        text-align: center;
+
+    } 
+
+    nav {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-around;
+        width: 10%;
+    }
+
+    nav ul li {
+        padding: 1%;
+        margin: 2%;
+        height: 25px;
+        display: flex;
+        border-radius: 10px 2px;
+        border: 2px solid ;
+    }
+    
+    .imgcon {
+        /* display: flex; */
+    /* align-items: center; */
+    
+    /* justify-content: space-between; 
+    flex-direction: column;
+    /* width: 100%; */
+    /* padding: 0px 120px; 
+    }
+
+    img {
+        height: 100%;
+        width: 150%;
+        /* border-radius:50%; 
+    }
+
+    /* .moa { */
+        /* border-radius: 10px; */
+        /* padding: 20px 15px; */
+        /* width: 180%; */
+        /* padding-left: 50px; */
+    /* } */
+
+        /* nav ul li { */
+        /* padding: %; */
+    /* margin: 2px; */
+        /* display: flex; */
+    /* } */
+
+/* } */
+
+
+/* @media only screen and (min-width :601px) {
+    nav ul {
+        width: 10%;
+    }
+
+    .moa {
+        border-radius: 10px; 
+        padding: 20px 15px; 
+        width: 180%;
+        padding-left: 50px;
+    }
+} */
+
+
+/* @media only screen and (min-width : 601px) and (max-width : 1200px) {
+
+
+} */ 
