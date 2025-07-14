@@ -178,7 +178,7 @@ typewriter
 
 #Services-s{
     background-image: url(../img/premium_photo-1.jpg);
-    height: max(100vh fit-content);
+    height: max(100vh);
     padding: 100px;
     background-attachment: fixed;
     background-position: center;
@@ -194,19 +194,49 @@ typewriter
 .skills{
     padding: 10px;
     display: grid;
-    grid-template-columns: 150px 150px 150px;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
     margin-top: .5rem;
+    /* width: 70%; */
     /* width: 100%; */
+}
+.exp{
+    border: solid green ;
+    background: rgba(255, 255, 255, 0.836);
+    
+    padding: 5px;
+    border-radius: 15px;
+}
+.expd{
+    padding: 10px 0;
+}
+.expd p{
+    color: rgb(0, 0, 0);
+}
+.exphe{
+    display: block;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: black;
+}
+.explo{
+    display: block;
+    color: rgb(8, 78, 230);
+    font-size: 1.1rem;
 }
 
 .skills button {
     background-color: white;
-    padding: 12px;
+    padding: 1rem 0;
+    align-items: start;
+    justify-content: start;
+    align-self: self-start;
+    
     border: solid rgb(112, 112, 223);
     border-radius: 18px;
     color: black;
     font-weight: bold;
+    
     border-width: 1px;
     font-size: 18px;
     /* margin-left: 10px; */
@@ -215,8 +245,9 @@ typewriter
     vertical-align: top; /*Putting this here so when I hover it doesm't drag others with it based on text align*/
 }
 .skills button:hover {
-    padding: 12px;
-    background-color: rgba(255, 255, 255, 0.384);
+    /* padding: 12px; */
+    scale: 1.1;
+    /* background-color: rgba(255, 255, 255, 0.384); */
     box-shadow: 5px 0 10px gold, -5px 0 10px rgb(255, 0, 170);
 }
 .My-Sk{
