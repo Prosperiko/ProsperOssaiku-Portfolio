@@ -141,6 +141,23 @@
     }
 }
 @media screen and (max-width:660px) {
+    #Services-s{
+        height: fit-content;
+    }
+    .cont{
+        line-height: normal;
+    }
+    .contp{
+        font-size: 19px; 
+        opacity: 1;
+    }
+
+    .skep{
+        display: flex;
+        flex-direction: column;
+        column-gap: 2rem;
+    }
+
     .Fincom, .portfo{
         border-radius: 10px;
         background-color: rgba(255, 255, 255, 0.473);
