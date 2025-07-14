@@ -22,13 +22,12 @@
 .moa{
     border-radius: 10px;
     padding: 20px 15px;
-    /* min-width: 320px; */
     text-align: start;
     align-items: start;
     border: 1px solid white;
     margin-right: 70px;
     background: rgba(255, 255, 255, 0.425);
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(40px);
     box-shadow : 0 0 10px rgba(0 ,0, 0, .3);
     color:black;
 }
@@ -39,13 +38,23 @@ typewriter
 #gd::after{content:'|' animation:blink 1s infinite
 @ke blink{
 0%,50%{opacity :1;} 
-51%, 100%{opacity:0;}*/
+51%, 100%{opacity:0;}
+.moa h2{
+    /* color: rgb(37 99 235); 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transform: translateX(50px);
+    animation: fadeIn ease forwards ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}*/
 .moa h2{
     /* color: rgb(37 99 235); */
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transform: translateX(50px);
     animation: fadeIn 3s ease forwards ;
 }
+
+
 @keyframes fadeIn {
     from 0%{
         opacity: 0;
@@ -69,10 +78,10 @@ typewriter
     }
 }
 .moa p{
-    border-radius: 10px;
-    padding: 20px 15px;
+    /* border-radius: 10px; */
+    padding: 20px 0;
     min-width: 14rem;
-    max-width: 24rem;
+    max-width: 30rem;
     text-align: start;
     align-items: start;
     /* border: 1px solid white; */
@@ -81,31 +90,84 @@ typewriter
     /* backdrop-filter: blur(100px); */
     /* box-shadow : 0 0 10px rgba(0 ,0, 0, .3); */
     color:black;
+    /* position: relative; */
+    /* affecting mee only */
+}
+.mee{
     position: relative;
 }
-.mee::after{
+.mee::before{
     content: '';
     position: absolute;
     background-color: rgb(97, 94, 94);
-    width: 15%;
+    width: 6rem;
     height: 3px;
-    bottom: 10px;
-    left: 2%;
+    bottom: 12px;
+    left: 0%;
 }
 #b-name {
     font-size: 40px;
     font-family:Georgia, 'Times New Roman', Times, serif ;
 }
-
+.social-icons {
+    display: flex;
+    gap: 8px;
+    justify-content: start;
+}
+.social-icons a {
+    border: solid;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    color: black;
+    /* background-color: white; */
+    /* color: white; */
+    /* background-color: black; */
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.social-icons a:hover {
+    background-color: rgb(52, 52, 204);
+    /* color: black; */
+    transform: translateY(-1px);
+}
+/*
+.social{
+    justify-content: space-around;
+    margin-top: .5rem;
+    align-items: center;
+    display: flex;
+    border: solid;
+    height: 30px;
+}
+.social a{
+    /* padding: 0 0.7px; 
+    border: 1px solid green;
+    height: 6px;
+}
+.social img{
+    height: 0;
+    border: solid;
+    /* height: auto; 
+}
+.social img:hover{
+    scale: 1.1;
+} */
 
 /* Buttons */
 #open-sbb{
     display: none;
     /* background: none; */
     border: none;
-    padding: .3em .3em;
+    padding: .2em .3em;
     margin-left: auto;
     cursor: pointer;
+    border-radius: 5px;
+    
 }
 #close-sbb{
     /* background: none; */
@@ -127,7 +189,7 @@ typewriter
 
 
 #About-s{
-    background-image: url(../img/top-view-creative-flat-lay-workspace.avif);
+    background-image: url(../img/backgound/top-view-creative-flat-lay-workspace.avif);
     padding: 100px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -177,8 +239,9 @@ typewriter
 
 
 #Services-s{
-    background-image: url(../img/premium_photo-1.jpg);
-    height: max(100vh);
+    background-image: url(../img/backgound/premium_photo-1.jpg);
+    height: max(100vh fit-content);
+    /* the above works */
     padding: 100px;
     background-attachment: fixed;
     background-position: center;
@@ -201,23 +264,23 @@ typewriter
     /* width: 100%; */
 }
 .exp{
-    border: solid green ;
     background: rgba(255, 255, 255, 0.836);
-    
-    padding: 5px;
+    padding: .5rem;
     border-radius: 15px;
 }
 .expd{
-    padding: 10px 0;
+    padding: 20px 0;
 }
 .expd p{
     color: rgb(0, 0, 0);
+    margin: 5px 0;
 }
 .exphe{
     display: block;
     font-weight: 600;
     font-size: 1.2rem;
     color: black;
+    margin: 5px 0;
 }
 .explo{
     display: block;
@@ -241,12 +304,12 @@ typewriter
     font-size: 18px;
     /* margin-left: 10px; */
     cursor: pointer;
-    transition : box-shadow .2s;
+    transition : box-shadow .2s, scale .2s;
     vertical-align: top; /*Putting this here so when I hover it doesm't drag others with it based on text align*/
 }
 .skills button:hover {
     /* padding: 12px; */
-    scale: 1.1;
+    scale: 1.07;
     /* background-color: rgba(255, 255, 255, 0.384); */
     box-shadow: 5px 0 10px gold, -5px 0 10px rgb(255, 0, 170);
 }
@@ -258,6 +321,7 @@ typewriter
     background-color: white;
     border-radius: 10px;
     padding: 4px;
+    margin-bottom: .5rem;
 }
 .My-Sk::before{
     content: '';
@@ -267,11 +331,26 @@ typewriter
     background: linear-gradient(to right, blue, purple);
     width: 100%;
 }
-
-
+.My-Ske{
+    display: inline-block;
+    position: relative;
+    font-weight: 700;
+    font-size: 28px;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: .5rem;
+}
+.My-Ske::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    bottom: -2px;
+    background: linear-gradient(to right, blue, purple);
+    width: 100%;
+}
 
 #Projects-s{
-    background-image: url(../img/flat-lay-workstation.avif);
+    background-image: url(../img/backgound/flat-lay-workstation.avif);
     height: fit-content;
     padding: 100px;
     background-attachment: fixed;
@@ -311,7 +390,7 @@ typewriter
 }
 .Fincom, .portfo{
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.473);
+    background-color: rgba(255, 255, 255, 0.699);
     backdrop-filter: blur(100px);
     padding: 1rem;
     /* max-width: 40rem; */
@@ -353,7 +432,7 @@ typewriter
     /* opacity: 1; */
 }
 .ic{
-    width: 30px;
+    width: 1.1rem;
     align-self: center;
     justify-self: center;
 }
@@ -369,8 +448,11 @@ typewriter
     bottom: 50%;
     align-self: center;
     justify-self: center;
-    /* padding: 1rem; */
-} 
+    border-radius: 20px;
+    border: none;
+    padding: .5rem;
+}
+
 .Fincom p, .portfo p{
     color: rgb(10, 10, 10);
     margin-top: 1rem;
@@ -387,7 +469,6 @@ typewriter
     display: block;
 }
 .mk{
-    background-color: rgba(255, 255, 255, 0.493);
     border-radius: 8px;
     margin: 0;
     padding-bottom: 0;
@@ -403,7 +484,7 @@ typewriter
 
 
 #Contact-s{
-    background-image: url(../img/top-view-desktop.avif);
+    background-image: url(../img/backgound/top-view-desktop.avif);
     /* height: min(100vh, fit-content) ; */
     width: 100%;
     padding: 100px ;
@@ -437,14 +518,14 @@ typewriter
 }
 .social-c{
     justify-content: space-around;
+    margin-top: .5rem;
 }
 .social-c a{
     padding: 0 8px;
 }
 .social-c img{
-    width: 5%;
+    width: 7%;
     height: auto;
-    
 }
 /* .quick-lc{
     border-radius: 10px;
@@ -471,8 +552,11 @@ typewriter
         /* height: min-content; */
 }
 .jk{
-    height: 24px;
+    height: 20px;
     opacity: 0;
+    width: 1.0rem;
+    align-self: center;
+    justify-self: center;
     transition: opacity .3s;
 }
 .quick-l a:hover{

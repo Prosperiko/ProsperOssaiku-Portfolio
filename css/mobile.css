@@ -12,9 +12,27 @@
         padding: 100px 30px;
     }
     .scrshot{
-        vertical-align: bottom;}
+        vertical-align: bottom;
+    }
+    .skep{
+        display: flex;
+        flex-direction: column;
+        row-gap: 4rem;
+    }
+    .social-c img{
+        width: 20px;
+        height: auto;
+    }
 }
 /* TO FLEX IMAGE AT SOME POINT */
+
+@media screen and (max-width:945px) {
+    .Fincom, .portfo{
+        display: flex;
+        flex-direction: column;
+        vertical-align: bottom;
+    }
+}
 
 @media screen  and (max-width:845px) {
     /* *{
@@ -110,14 +128,7 @@
         right: 0;
         /* padding-left: 0; */
     }
-    .skills{
-        display: flex;
-        flex-direction: column ;
-    }
-    .skills button{
-        padding: 4px;
-        width: max(max-content 100%) ;
-    }
+    
     #Contact-s{
     display: flex;
     flex-direction: column ;
@@ -131,16 +142,17 @@
         gap: 1rem;
         height: fit-content;
     }
+    .social-c img{
+        width: 20px;
+        height: auto;
+    }
     
 }
-@media screen and (max-width:945px) {
-    .Fincom, .portfo{
-        display: flex;
-        flex-direction: column;
-        vertical-align: bottom;
-    }
-}
+
 @media screen and (max-width:660px) {
+    .moa p{
+        margin-right: 0;
+    }
     #Services-s{
         height: fit-content;
     }
@@ -212,4 +224,14 @@
         margin-bottom: 0;
         min-width: 0;
     }
+    .social-c img{
+        width: 20px;
+        height: auto;
     }
+    }
+
+@media screen and (max-width: 500px){
+    .skills{
+        grid-template-columns: 1fr 1fr;
+    }
+}
