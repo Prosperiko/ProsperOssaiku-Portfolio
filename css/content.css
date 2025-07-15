@@ -51,7 +51,7 @@ typewriter
     /* color: rgb(37 99 235); */
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transform: translateX(50px);
-    animation: fadeIn 3s ease forwards ;
+    animation: fadeIn 2s ease forwards ;
 }
 
 
@@ -75,6 +75,11 @@ typewriter
     to{
         opacity: 1;
         transform: translateX(0);
+    }
+}
+@keyframes slideIn {
+    to{
+        transform: translateY(0);
     }
 }
 .moa p{
@@ -108,6 +113,25 @@ typewriter
 #b-name {
     font-size: 40px;
     font-family:Georgia, 'Times New Roman', Times, serif ;
+    transform: translateY(-30px);
+    animation: slideIn 2s ease forwards ;
+}
+.role{
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 30px;
+    transform: translateY(30px);
+    animation: slideIn 2s ease forwards ;
+}
+.q-abt{
+    animation: scali 2s ease forwards ;
+}
+@keyframes scali {
+    from{
+        scale: 0.5;
+    }
+    to{
+        scale: 1;
+    }
 }
 .social-icons {
     display: flex;
@@ -209,6 +233,10 @@ typewriter
     color: white;
     font-family: Georgia;
     padding-bottom: 1rem;
+    animation: move linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 70%;
+    
 }
 .Abt-me::before{
     content: '';
@@ -226,6 +254,9 @@ typewriter
     justify-self: center;
     padding: 20px;
     line-height: 2.5rem;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 
 .contp{
@@ -262,11 +293,17 @@ typewriter
     margin-top: .5rem;
     /* width: 70%; */
     /* width: 100%; */
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 .exp{
     background: rgba(255, 255, 255, 0.836);
     padding: .5rem;
     border-radius: 15px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
 }
 .expd{
     padding: 20px 0;
@@ -322,6 +359,9 @@ typewriter
     border-radius: 10px;
     padding: 4px;
     margin-bottom: .5rem;
+    animation: move linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 70%;
 }
 .My-Sk::before{
     content: '';
@@ -367,6 +407,18 @@ typewriter
     border-radius: 10px;
     color: white;
     padding: 4px;
+    animation: scoop linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 70%;
+}
+@keyframes scoop {
+    from{
+        transform: translateX(100px);
+    }
+    to{
+        transform: translateX(0);
+    }
+    
 }
 .Proj-h::before{
     content: '';
@@ -399,6 +451,9 @@ typewriter
     gap: 1rem;
     display: flex;
     /* grid-template-rows: 1fr 2fr; */
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
 }
 .scrshot{
     width: 100%;
@@ -499,19 +554,17 @@ typewriter
     justify-content: space-between;
     gap: 2rem;
 }
-/* .connect-c{
-    background-color: rgba(255, 255, 255, 0.775);
-    border-radius: 10px;
-    padding: 2rem;
-    height: 20rem;
-} */
+.connect-c, .quick-lc, .message-c{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
 .ConP{
     color: rgb(37 99 235);
     font-weight: 700;
     margin-bottom: 1.7rem;
     font-size: 1.5em;
     display: inline-block;
-    /* line-height: 20rem; */
 }
 .pcon{
     line-height: 1.6rem;
@@ -600,7 +653,31 @@ typewriter
 .message-c a{
     align-self: center;
     justify-self: center;
+    
 }
+
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
 
 /* footer .footer-content {
     display: flex;
