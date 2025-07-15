@@ -35,6 +35,10 @@
 }
 
 @media screen  and (max-width:845px) {
+    body{
+        background-image: none;
+    }
+
     .imgcon{
         flex-direction: column;
         height: fit-content;
@@ -42,6 +46,7 @@
         margin: 0;
         padding: 2em;
         display: flex;
+        background: black;
     }
     .imgcon img {
         width: 95%;
@@ -51,9 +56,13 @@
         max-width: 350px;
     }
     .moa{
-        /* width: 100%; */
         padding: 0 11px;
         margin: 0 35px;
+        color:white;
+        background: none;
+    }
+    .moa p{
+        color: white;
     }
     nav{
         position: fixed;
