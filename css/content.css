@@ -28,22 +28,8 @@
 }
 .moa h2{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transform: translateX(50px);
-    animation: fadeIn 2s ease forwards ;
 }
 
-
-@keyframes fadeIn {
-    from 0%{
-        opacity: 0;
-        transform:translateX(-30px);
-    }
-
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
 @keyframes slideIn {
     to{
         transform: translateY(0);
@@ -334,18 +320,8 @@
     border-radius: 10px;
     color: white;
     padding: 4px;
-    animation: scoop linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 70%;
 }
-@keyframes scoop {
-    from{
-        transform: translateX(10%);
-    }
-    to{
-        transform: translateX(0);
-    }
-}
+
 .Proj-h::before{
     content: '';
     position: absolute;
@@ -375,7 +351,7 @@
     display: flex;
     animation: side linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 20%;
+    animation-range: entry 0% cover 15%;
 }
 .scrshot{
     width: 100%;
@@ -464,7 +440,7 @@
 
 #Contact-s{
     background-image: url(../img/backgound/top-view-desktop.avif);
-    height: max(50vh fit-content);
+    height: 50vh;
     width: 100%;
     padding: 100px ;
     background-attachment: fixed;
@@ -475,6 +451,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     gap: 2rem;
+    margin: 0;
 }
 .connect-c, .quick-lc, .message-c{
     animation: appear linear;

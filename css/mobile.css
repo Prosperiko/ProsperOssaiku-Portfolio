@@ -9,7 +9,7 @@
         height: 100vh;
     }
     #Projects-s{
-        padding: 100px 30px;
+        padding: 4rem 1.5rem;
     }
     .scrshot{
         vertical-align: bottom;
@@ -35,14 +35,6 @@
 }
 
 @media screen  and (max-width:845px) {
-    /* *{
-        margin: 3px;
-        padding: 5px;
-    }
-    body{
-        margin: 20px;
-        padding: 100px;
-    } */
     .imgcon{
         flex-direction: column;
         height: fit-content;
@@ -104,7 +96,7 @@
         gap: 0;
         position: fixed;
         top: 0;
-        padding: 15px;
+        padding: 1rem;
         margin: 0;
         height: max-content;
         min-width: 0;
@@ -119,7 +111,7 @@
     }
 
     #Services-s, #About-s, #Projects-s, #Home-s, #Contact-s{
-        padding: 100px 15px;
+        padding: 4rem 1.2rem;
         min-width: 320px;
     }
     .My-Sk{
@@ -132,8 +124,8 @@
     #Contact-s{
     display: flex;
     flex-direction: column ;
-    /* height: 100vh; */
-    /* border: solid yellow; */
+    height: fit-content;
+
     }
 
     .prodi{
@@ -194,8 +186,6 @@
         vertical-align: bottom;
     }
     .ovla{
-        /* inset: 0; */
-        /* height: 98.7%; */
         width: 100%;
         border-radius: 10px;
         background: #00000086;
@@ -206,24 +196,13 @@
         margin: 0;
         z-index: -1;
     }
-    /* .fd{
-        inset: 0;
-        height: 98.7%;
-        width: 100%;
-        border-radius: 10px;
-        background: white;
-        top: 0;
-        bottom: 0;
-        padding: 0;
-        margin: 0;
-        border: 1px solid green;
-    } */
-    .finc{
+
+    /* .finc{
         height: fit-content;
         padding-bottom: 0;
         margin-bottom: 0;
         min-width: 0;
-    }
+    } */
     .social-c img{
         width: 20px;
         height: auto;
@@ -234,14 +213,6 @@
     .skills{
         grid-template-columns: 1fr 1fr;
     }
-    .moa{
-        width: 100%;
-    }
-    
-
-}
-
-@media screen and (max-width: 400px){
     .moa{
         width: 100%;
     }
