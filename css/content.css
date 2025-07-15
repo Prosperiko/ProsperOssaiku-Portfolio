@@ -99,20 +99,24 @@
     justify-content: start;
 }
 .social-icons a {
-    border: solid;
+    /* border: solid; */
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 24px;
-    height: 24px;
-    color: black;
+    width: 30px;
+    height: 30px;
+    color: white;
     text-decoration: none;
     font-size: 12px;
+    background-color: black;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
+.social-icons a i{
+    scale: 1.5;
+}
 .social-icons a:hover {
-    background-color: rgb(52, 52, 204);
+    background-color: rgb(37 99 235);
     transform: translateY(-1px);
 }
 
