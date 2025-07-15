@@ -6,7 +6,6 @@
     margin-left: 3%;
     padding:100px;
     height: 100vh;
-    
 }
 .imgcon img {
     height: 100%;
@@ -59,15 +58,15 @@
 #b-name {
     font-size: 40px;
     font-family:Georgia, 'Times New Roman', Times, serif ;
-    transform: translateY(-30px);
+    transform: translateY(-20px);
     animation: slideIn 2s ease forwards ;
 }
 .role{
     font-family: 'Times New Roman', Times, serif; 
     font-size: 30px;
-    transform: translateY(30px);
+    transform: translateY(20px);
     animation: slideIn 2s ease forwards ;
-}
+}/*
 .q-abt{
     animation: scali 2s ease forwards ;
 }
@@ -78,7 +77,7 @@
     to{
         scale: 1;
     }
-}
+} */
 .social-icons {
     display: flex;
     gap: 8px;
@@ -209,9 +208,12 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     margin-top: .5rem;
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
+    animation-duration: 2s;
+    /* animation: appear linear; */
+    /* animation-timeline: view(); */
+    /* animation-range: entry 0% cover 30%; */
+    scale: 1;
+    opacity: 1;
 }
 .exp{
     background: rgba(255, 255, 255, 0.836);
@@ -551,7 +553,37 @@
 }
 
 
+/*    ANIMATION  */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+.slid-in {
+    opacity: 0;
+    transform: translatex(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.slid-in.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+.scal-in {
+    opacity: 0;
+    scale: 0.8;
+    transition: opacity 0.6s ease-out, scale 0.6s ease-out;
+}
+.scal-in.show{
+    opacity: 1;
+    scale: 1;
+}
 
+
+/* 
 @keyframes appear {
     from {
         opacity: 0;
@@ -583,4 +615,4 @@
         clip-path: inset(0 0 0 0);
     }
     
-}
+} */
