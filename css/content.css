@@ -6,11 +6,6 @@
     margin-left: 3%;
     padding:100px;
     height: 100vh;
-    background-image: url(../img/backgound/photo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment:fixed ;
-    background-size: cover;
 }
 .imgcon img {
     height: 100%;
