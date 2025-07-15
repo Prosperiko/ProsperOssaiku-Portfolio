@@ -178,12 +178,12 @@
         background-color: rgba(255, 255, 255, 0.473);
         backdrop-filter: blur(100px);
         padding: 1rem;
-        /* max-width: 40rem; */
         justify-self: center;
-        /* height: 100%; */
         gap: 0rem;
         min-width: 0;
-        /* grid-template-rows: 1fr 2fr; */
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 20%;
     }
     .scrshot{
         width: 100%;
@@ -191,9 +191,6 @@
         height: 100%; 
         margin: 0;
         padding: 0;
-        /* align-self: self-end; */
-        /* background-color: blue; */
-        /* max-height: 169rem; */
         vertical-align: bottom;
     }
     .ovla{
