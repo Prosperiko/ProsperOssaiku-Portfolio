@@ -58,8 +58,9 @@
     .moa{
         padding: 0 11px;
         margin: 0 35px;
+        width: 300px;
         color:white;
-        background: none;
+        background: black;
     }
     .moa p{
         color: white;
