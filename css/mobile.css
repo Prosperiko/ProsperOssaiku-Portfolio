@@ -84,7 +84,7 @@
     }
     #open-sbb,#close-sbb{
         display: block;
-    }
+    } 
     nav ul {
         width: 100%;
         flex-direction: column;
