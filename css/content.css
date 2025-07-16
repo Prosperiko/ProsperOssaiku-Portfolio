@@ -1,5 +1,4 @@
 .imgcon {
-    /* background-color: black; */
     display: flex;
     align-items: center;
     gap: 50px;
@@ -212,9 +211,7 @@
     gap: 10px;
     margin-top: .5rem;
     animation-duration: 2s;
-    /* animation: appear linear; */
-    /* animation-timeline: view(); */
-    /* animation-range: entry 0% cover 30%; */
+
     scale: 1;
     opacity: 1;
 }
@@ -395,7 +392,6 @@
 }
 .bic{
     position: absolute;
-    z-index: 0;
     cursor: pointer;
     top: 50%;
     left: 50%;
@@ -584,38 +580,3 @@
     opacity: 1;
     scale: 1;
 }
-
-
-/* 
-@keyframes appear {
-    from {
-        opacity: 0;
-        scale: 0.5;
-    }
-    to {
-        opacity: 1;
-        scale: 1;
-    }
-}
-
-@keyframes move {
-    from {
-        transform: translateX(50%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-@keyframes side {
-    from{
-        opacity: 1;
-        clip-path: inset(0 100% 0 
-        0);
-    }
-    to{
-        opacity: 1;
-        clip-path: inset(0 0 0 0);
-    }
-    
-} */

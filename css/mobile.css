@@ -35,10 +35,6 @@
 }
 
 @media screen  and (max-width:845px) {
-    body{
-        background-image: none;
-    }
-
     .imgcon{
         flex-direction: column;
         height: fit-content;
@@ -58,9 +54,12 @@
     .moa{
         padding: 0 11px;
         margin: 0 35px;
-        width: 300px;
         color:white;
         background: black;
+        position: relative;
+        border-radius: 10px;
+        border: 1px solid;
+        width: 100%;
     }
     .moa p{
         color: white;
@@ -68,7 +67,7 @@
     nav{
         position: fixed;
         top: 0;
-        right: -100%; /*Setting this to hide thevavbar initially moving it offscreen*/
+        right: -100%; /*Setting this to hide the navbar initially moving it offscreen*/
         height: 100%;
         z-index: 10;
         width: min(15em, 100%);
@@ -86,7 +85,6 @@
     #open-sbb,#close-sbb{
         display: block;
     }
-    
     nav ul {
         width: 100%;
         flex-direction: column;
@@ -115,9 +113,6 @@
         text-align: start;
         padding-left: 0;
         margin-left: 0;
-        /* width: 60%; */
-        /* margin: 0;
-        padding: 0; */
     }
 
     #Services-s, #About-s, #Projects-s, #Home-s, #Contact-s{
@@ -128,7 +123,6 @@
         text-align: left;
         justify-self: start;
         right: 0;
-        /* padding-left: 0; */
     }
     
     #Contact-s{
@@ -207,12 +201,6 @@
         z-index: -1;
     }
 
-    /* .finc{
-        height: fit-content;
-        padding-bottom: 0;
-        margin-bottom: 0;
-        min-width: 0;
-    } */
     .social-c img{
         width: 20px;
         height: auto;
@@ -222,8 +210,5 @@
 @media screen and (max-width: 500px){
     .skills{
         grid-template-columns: 1fr 1fr;
-    }
-    .moa{
-        width: 100%;
     }
 }
