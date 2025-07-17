@@ -441,9 +441,10 @@
 
 #Contact-s{
     background-image: url(../img/backgound/top-view-desktop.avif);
-    height: 50vh;
+    min-height: 10vh;
     width: 100%;
-    padding: 100px ;
+    /* height: fit-content; */
+    padding: 100px 100px 2rem 100px ;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
