@@ -9,12 +9,10 @@
 }
 .imgcon img {
     height: 100%;
-    border-radius:50%;
+    border-radius:5%;
     padding: 0;
     max-height: 30rem;
-    width: 30%;
-    object-fit: cover;
-    object-position: top ;
+    
 
 }
 .pk{

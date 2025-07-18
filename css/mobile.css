@@ -32,12 +32,12 @@
         flex-direction: column;
         vertical-align: bottom;
     }
-    .pk{
+    /* .pk{
         display: block;
     }
     .pc{
         display: none;
-    }
+    } */
 }
 
 @media screen  and (max-width:845px) {
@@ -51,9 +51,8 @@
         background: black;
     }
     .imgcon img {
-        width: 95%;
-        height: 20rem;
-        border-radius:100%;
+        
+        border-radius:10%;
         padding: 0;
         max-width: 350px;
     }
