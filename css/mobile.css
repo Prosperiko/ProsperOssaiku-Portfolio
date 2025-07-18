@@ -32,12 +32,6 @@
         flex-direction: column;
         vertical-align: bottom;
     }
-    /* .pk{
-        display: block;
-    }
-    .pc{
-        display: none;
-    } */
 }
 
 @media screen  and (max-width:845px) {
