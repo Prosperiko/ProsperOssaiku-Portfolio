@@ -32,6 +32,12 @@
         flex-direction: column;
         vertical-align: bottom;
     }
+    .pk{
+        display: block;
+    }
+    .pc{
+        display: none;
+    }
 }
 
 @media screen  and (max-width:845px) {
@@ -146,6 +152,7 @@
 }
 
 @media screen and (max-width:660px) {
+    
     header {
         padding: 10px;
     }
