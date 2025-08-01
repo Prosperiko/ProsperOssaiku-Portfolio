@@ -140,7 +140,7 @@
 
 
 #About-s{
-    background-image: url(../img/backgound/top-view-creative-flat-lay-workspace.avif);
+    background-image: url(../img/backgound/top-view-creative-flat-lay-workspace.webp);
     padding: 100px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -194,7 +194,7 @@
 
 
 #Services-s{
-    background-image: url(../img/backgound/premium_photo-1.jpg);
+    background-image: url(../img/backgound/premium_photo-1.webp);
     height: max(100vh fit-content);
     /* the above works */
     padding: 100px;
@@ -310,7 +310,7 @@
 }
 
 #Projects-s{
-    background-image: url(../img/backgound/flat-lay-workstation.avif);
+    background-image: url(../img/backgound/flat-lay-workstation.webp);
     height: fit-content;
     padding: 100px;
     background-attachment: fixed;
@@ -445,7 +445,7 @@
 
 
 #Contact-s{
-    background-image: url(../img/backgound/top-view-desktop.avif);
+    background-image: url(../img/backgound/top-view-desktop.webp);
     min-height: 10vh;
     width: 100%;
     /* height: fit-content; */
