@@ -1,8 +1,12 @@
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1170px) {
     .imgcon{
         flex-direction: column;
         height: fit-content;
     }
+}
+@media screen and (max-width: 1080px) {
+    
+
     #Contact-s{
         display: flex;
         flex-direction: column ;
@@ -210,5 +214,15 @@
 @media screen and (max-width: 500px){
     .skills{
         grid-template-columns: 1fr 1fr;
+    }
+
+    .imgcon img {
+        height: 100%;
+        width: 100%;
+        border-radius:100%;
+        padding: 0;
+        object-fit: cover;
+        object-position: top;
+        /* max-height: 30rem; */
     }
 }
