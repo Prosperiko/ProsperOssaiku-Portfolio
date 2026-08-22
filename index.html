@@ -1,278 +1,485 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth;">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Created with style by Prosper!">
-    
-    <meta property="og:site_name" content="Ossaiku">
+    <meta name="description" content="Prosper Ossaiku | Backend Software Engineer — Turning witty ideas into ground-breaking inventions.">
+
+    <meta property="og:site_name" content="Prosper Ossaiku">
     <meta property="og:url" content="https://ossaiku.tech">
     <meta property="og:image" content="https://ossaiku.tech/img/pic.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Prosper Ossaiku | Software Developer">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@Prosperiko">
     <meta name="twitter:creator" content="@Prosperiko">
-    <meta name="twitter:title" content="Prosper Ossaiku | Software Developer">
-    <meta name="twitter:description" content="Created with wit by Prosper!">
+    <meta name="twitter:title" content="Prosper Ossaiku | Backend Software Engineer">
+    <meta name="twitter:description" content="Turning witty ideas into ground-breaking inventions.">
     <meta name="twitter:image" content="https://ossaiku.tech/img/pic.webp">
 
-    <title>Prosper Ossaiku | Fullstack Developer</title>
-    <script src="javscript/java.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="css/content.css">
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <link rel="stylesheet" href="css/socials.css">
+    <title>Prosper Ossaiku | Backend Software Engineer</title>
     <link rel="shortcut icon" href="img/pic.webp" type="image/x-icon">
     <link rel="icon" href="img/pic.webp" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+<base target="_blank">
 </head>
 <body>
-    <!-- <div style="background-color: white; height: 100px; position: fixed; z-index: 100000; top: 100px"> -->
-    <header>
-        <div class = 'logo'>
-            <h1>&lt/&gt PROSPER OSSAIKU</h1>
-            <p style="color: white;">Rikotech</p>
-        </div>
-        <button id="open-sbb" onclick="openSidebar()"><img style="width: 25px;" src="img/icons/bars-solid (1).svg" alt=""></button>
-        <nav id="navbar">
-            <ul>
-                <li><button id="close-sbb" onclick="closeSidebar()"><img style="width: 25px;" src="img/icons/x-solid (1).svg" alt=""></button></li>
-                
-                <li><strong><a href="#Home-s">HOME</a></strong></li>
-                <li><strong><a href="#About-s">ABOUT</a></strong></li>
-                <li><strong><a href="#Services-s">SERVICES</a></strong></li>
-                <li><strong><a href="#Projects-s">PORTFOLIO</a></strong></li>
-                <li><strong><a href="#Contact-s">CONTACT</a></strong></li>
-            </ul>
-        </nav>
-        <div id="overlay" onclick="closeSidebar()"></div>
-    </header>
 
-    <div class="imgcon" id="Home-s">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="logo">&lt;/&gt; PROSPER OSSAIKU</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars" id="menuIcon"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
 
-        <div class="moa">
-            <h2 class = 'slid-in'>Turning Witty Ideas Into Ground-breaking Inventions</h2>
-            <p class = 'mee' > HELLO, I AM</p>
-            <br>
-            <h3 id="b-name">PROSPER OSSAIKU</h3>
-            <h4 class="role">Fullstack Developer</h4>
-            <br>
-            <br>
-            <p class = 'q-abt slid-in'> I am a fullstack developer(backend major) skilled in Python with experience in building projects using Django, Flask, Javascript and Pandas.<span style="font-weight: 700; font-style: italic;">I don't just code, I design human-AI workflows that deliver production-ready results faster and safer</span>, transforming complex knowledge and data analyst insights into scalable, secure systems.Ever expanding my tech stack with an unending thirst for valuable and useful knowledge.</p> 
-            <div class="social-icons">
-                <a href="mailto:prosperossaiku@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                <a href="https://x.com/Prosperiko" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                <a href="https://linkedin.com/in/prosper-ossaiku" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/Prosperiko" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="resume/ProsperOs_res.pdf" download><i class="fas fa-download"></i></a>
-                
+    <!-- Hero -->
+    <!-- <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge reveal">
+                <span class="dot"></span>
+                Available for opportunities
             </div>
-            <br>
-        </div>
-
-        <img class="fade-in" src="img/pic.webp" loading="lazy" alt="pic">
-    </div>
-    
-    <!-- About Section -->
-    <div id = "About-s">
-        <p class="Abt-me slid-in">ABOUT ME</p>
-        <div class = 'cont fade-in'>
-            <p class = contp>Turning witty ideas into ground-breaking inventions, coding with purpose. One who loves problem-solving and seeing ideas come alive in the real world. I specialize in building creative tools and web platforms, using Python, Django, Flask, Pandas, Numpy, and matplotlib to transform complex concepts into scalable solutions while maintaining easy to navigte UIs with front-end technologies including HTML&CSS for visuals and JavaScript for functionality.
-            I don't just write code, I build solutions, lead people, and use AI as a multiplier, so I deliver <span style="font-family:'Segoe UI'">10x</span> results with the same time. I thrive on collaboration with teammates and stakeholders, believing that great products come from diverse perspectives and continuous learning. Driven by curiosity and a relentless pursuit of knowledge, my mission is to build impactful tools that inspire and empower people everywhere.</p>
-            <br>
-            <br>
-            <p class="contp">Whether I'm building products or optimizing systems, I bring speed, creativity, and adaptability, leveraging AI as a multiplier-not a replacement.</p>
-        </div>
-    </div>
-    <div id = "Services-s">
-        <div class = 'skep'>
-            <div>
-                <p class = "My-Sk slid-in">Skills|Services</p>
-                <div class = 'skills fade-in'>
-                    <button>Python</button>
-                    <button>Data Science</button>
-                    <button>Software Development</button>
-                    <button>Git & GitHub</button>
-                    <button>Django</button>
-                    <button>Jupyter</button>
-                    <button>JavaScript</button>
-                    <button>HTML|CSS</button>
-                    <button>Flask</button>
-                    <button>MySQL</button>
-                    <button>Pandas</button>
-                    <button>Numpy</button>
-                    <button>Data Analytics</button>
-                    <button>AI</button>
-                </div>
-            </div>
-            <div class="exp">
-                <p class = "My-Ske slid-in">Experience</p>
-                <div class="expd fade-in">
-                    <p>February 2026 - Present</p>
-                    <span class = 'exphe'>Team Lead</span>
-                    <span class="explo">Cowrywise Skill-based Backend Engineering Team 6</span>
-                    <p>Led the team and worked closely with teammates in building and solidifying our skills in backend engineering, ensuring no one willing to learn was left behind and working on projects.</p>
-                </div>
-                <div class="expd fade-in">
-                    <p>August 2024 - February 2025</p>
-                    <span class = 'exphe'>Python Developer</span>
-                    <span class = explo>Yomi Denzel Foundation </span>
-                    <p>Contributed to multiple projects from simple calculators to mini games to predictive machine learning, transforming creative ideas into scalable systems.
-                        Assisted peers in debugging and reviewing code, fostering team productivity and knowledge sharing increasing efficiency by 40%.
-                    </p>
-                </div>
-                <div class="expd fade-in">
-                    <p>March 2025 - Present</p>
-                    <span class = 'exphe'>Lead Developer</span>
-                    <span class="explo">CoinFlux ltd</span>
-                    <p>Led the development of a finance tracker, implementing authentication and data analytics modules; enhanced user data insights and security. Equipped with an AI chatbot for personalised financial recommendations.</p>
-                </div>
-                <div class="expd fade-in">
-                    <p>October 2024 - February 2025</p>
-                    <span class="exphe">Python Data-Analyst</span>
-                    <span class = explo>Yomi Denzel Foundation </span>
-                    <p>Supported data-driven decision-making and backend data workflows where large datasets were cleaned and standardized using pandas and numpy.
-                        with automated  processes, saving analysis time and reducing manual errors.
-                        Also built visual dashboards in Tableau and analysis with matplotlib, providing actionable insights.
-                    </p>
-                </div>
-                <div class="expd fade-in">
-                    <p>January 2025 - February 2025</p>
-                    <span class = 'exphe'>Data Analyst Intern</span>
-                    <span class = explo>KultureHire — India(Jul 2024 – Sep 2024)</span>
-                    <p>Strengthened data analysis and visualization skills through hands-on learning.
-                        Completed a capstone project analyzing business data, presented through comprehensive Power BI dashboards and reports.
-                        Enhanced communication skills by effectively presenting complex technical findings to non-technical audiences.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id = "Projects-s">
-        <p class = 'Proj-h slid-in'>Some of My Projects</p>
-        <div class="prodi">
-            <div class="Fincom scal-in">
-                <div class="finc">
-                    <img class="scrshot" loading="lazy" src="img/backgound/fincom.webp" alt="">
-                    <div class="ovla">
-                        <a href="https://fincom.onrender.com" target="_blank"><button class="bic"><img class="ic" src="img/icons/arrow-up-right-from-square-solid.svg" alt=""></button></a>
-                    </div>
-                </div>
-                
-                <div class="text fade-in">
-                    <p class="mk"> <span class="proj-t">Fincom – Finance Tracker System </span> </p>
-                    <p> I led a team in building and deploying an intelligent finance tracker system designed to help users monitor spending, manage budgets, and receive personalized business recommendations 2x faster by integrating Github Copiilot and OpenAI APIs. 
-                        The platform also includes a recommendation system that suggests business ideas based on a user's capital alongside an AI Chatbot. Designed backend logic to improve server performance and accessibility, improving user experience by 20%. 
-                        Fincom simplifies personal finance management and empowers users with actionable insights, making financial planning more accessible and inspiring.</p>
-
-                    <div style="display: flex; flex-wrap: wrap; gap: .7rem; margin-top: .5rem;">
-                        <span class="jsx">Python</span>
-                        <span class="jsx">Flask</span>
-                        <span class="jsx">SQLite</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfo scal-in">
-                <div class="finc">
-                    <img class="scrshot" loading="lazy" src="img/backgound/port.webp" alt="">
-                    
-                    <div class="ovla">
-                        <a href="" target="_blank"><button class="bic"><img class="ic" src="img/icons/arrow-up-right-from-square-solid.svg" alt=""></button></a>
-                    </div>
-                </div>
-                
-                <div class="text fade-in">
-                    <p class="mk"> <span class="proj-t">My Personal Developer Portfolio </span> </p>
-                        <p> (Currently in view)
-                            This is my personal developer portfolio website designed to showcase my skills (particularly front-end), display projects, and passion for turning witty ideas into groundbreaking tech solutions.
-                            Designed to share my professional story and technical skills in a creative, elegant way, present my project in detail, with clear descriptions and impact and provide an easy way for recruiters, clients, and collaborators to connect with me.
-                        </p>
-                    <div style="display: flex; flex-wrap: wrap; gap: .7rem; margin-top: .5rem;">
-                        <span class="jsx">HTML</span>
-                        <span class="jsx">CSS</span>
-                        <span class="jsx">JavaSript</span>
-                    </div>
-                </div>
-
-                
-            </div>
-            <br>
-            <br>
-            <p class = 'Proj-h slid-in'>Side Projects</p>
-            <br>
-            <div class="portfo scal-in">
-                <div class="finc">
-                    <img class="scrshot" loading="lazy" src="img/backgound/yotue.webp" alt="">
-                    
-                    <div class="ovla">
-                        <a href="https://prosperiko.github.io/Yutub/" target="_blank"><button class="bic"><img class="ic" src="img/icons/arrow-up-right-from-square-solid.svg" alt=""></button></a>
-                    </div>
-                </div>
-                <div class="text fade-in">
-                    <p class="mk"> <span class="proj-t">Youtube Clone (Desktop Version) </span> </p>
-                        <p>This is a front-end clone of the YouTube interface(desktop version). It replicates the core layout and interaction of the Youtube including the homepage, sidebar navigation, video thumbnails, search bar, and video detail view.
-                        The goal was to build a familiar yet custom experience — not just to copy, but to learn, rebuild, and refine using tools like HTML5 and CSS3. It’s a visual, hands-on expression of how I bring structured ideas to life with a front-end focus.
-                        </p>
-                    </p>
-                    <div style="display: flex; flex-wrap: wrap; gap: .7rem; margin-top: .5rem;">
-                        <span class="jsx">HTML</span>
-                        <span class="jsx">CSS</span>
-                    </div>
-                </div>
-            </div>
-            <div class="portfo scal-in">
-                <div class="finc">
-                    <img class="scrshot" loading="lazy" src="img/backgound/rps.webp" alt="">
-                    
-                    <div class="ovla">
-                        <a href="https://prosperiko.github.io/RPS-game" target="_blank"><button class="bic"><img class="ic" src="img/icons/arrow-up-right-from-square-solid.svg" alt=""></button></a>
-                    </div>
-                </div>
-                <div class="text fade-in">
-                    <p class="mk"> <span class="proj-t">Rock Paper Scissors</span> </p>
-                        <p>A mini Rock Paper Scissors game to demonstrate few concepts of javascript involving use of DOM, loops, local Storage to save scores per device, an autoplay function and keydowns among other concepts. Displaying a strong foundation in javascript fundamentals.</p>
-                    </p>
-                    <div style="display: flex; flex-wrap: wrap; gap: .7rem; margin-top: .5rem;">
-                        <span class="jsx">JavaScript</span>
-                        <span class="jsx">HTML/CSS</span>
-                    </div>
-                </div>
-            </div>
+            <h1 class="reveal reveal-delay-1">
+                Turning Witty Ideas Into<br>
+                <span class="gradient-text">Ground-breaking Inventions</span>
+            </h1>
+            <p class="hero-desc reveal reveal-delay-2">
+                Backend Software Engineer skilled in <strong>Python, Django, FastAPI</strong> & <strong>SQL</strong>.
+                I design scalable server-side systems and integrate AI workflows that deliver production-ready results faster and safer.
+            </p>
             
-        </div>
-    </div>
-    <div id="Contact-s">
-        <div class = 'connect-c scal-in'>
-            <p class = 'ConP'><span>Let’s Build Something</span></p>
-            <p class="pcon">I’m always open to connecting with creative minds, tech enthusiasts. Whether you have a bold new project, or just want to share some tech inspiration, I’d love to hear from you. Let’s collaborate and make something inspiring!</p>
-            <div class = 'social-c'>
-                <a href="https://github.com/Prosperiko" target="_blank"><img src="img/icons/github-brands.svg" alt=""></a>
-                <a href="https://linkedin.com/in/prosper-ossaiku" target="_blank"><img src="img/icons/linkedin-brands.svg" alt=""></a>
-                <a href="https://x.com/Prosperiko" target="_blank"><img src="img/icons/square-x-twitter-brands.svg" alt=""></a>
+            <div class="hero-buttons reveal reveal-delay-3">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+            <div class="social-row reveal reveal-delay-3">
+                <a href="https://github.com/Prosperiko" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/prosper-ossaiku" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://x.com/Prosperiko" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                <a href="mailto:prosperossaiku@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="resume/ProsperOs_res.pdf" download aria-label="Download Resume"><i class="fas fa-download"></i></a>
             </div>
         </div>
-        <div class="quick-lc scal-in">
-            <p class="qlP">Quick Links</p>
-            <div class="quick-l">
-                <a class = 'jj' href="#Home-s">HOME <img class ='jk' src="img/icons/arrow-up-right-from-square-solid.svg" alt=""></a>
-                <a class = 'jj' href="#About-s">ABOUT <img class ='jk' src="img/icons/arrow-up-right-from-square-solid.svg" alt=""></a>
-                <a class = 'jj' href="#Services-s">SERVICES <img class ='jk' src="img/icons/arrow-up-right-from-square-solid.svg" alt=""></a>
-                <a class = 'jj' href="#Projects-s">PORTFOLIO <img class ='jk' src="img/icons/arrow-up-right-from-square-solid.svg" alt=""></a>
-                <a class = 'jj' href="resume/ProsperOs_res.pdf" download="">RESUME <img class ='jk' src="img/icons/arrow-up-right-from-square-solid.svg" alt=""></a>
-            </div>
-        </div>
-        <div class="message-c scal-in" >
-            <p class="messageP">Get In Touch</p>
-            <p style="justify-self: center;">Together with ideas shared, we can make formidable impact!</p>
-            <a href="mailto:prosperossaiku@gmail.com"><button>Email</button></a>
-        </div>
-        <p style="color: rgb(255, 255, 255); align-self: center; padding-bottom: 2rem;">&copy; 2026 Prosper Ossaiku All Rights Reserved</p>
+    </section> -->
 
-    </div>
-    
+    <section class="hero" id="home">
+        <div class="hero-wrap">
+            <div class="hero-content">
+                <div class="hero-badge reveal">
+                    <span class="dot"></span>
+                    Available for opportunities
+                </div>
+                <h1 class="reveal reveal-delay-1">
+                    Turning Witty Ideas Into<br>
+                    <span class="gradient-text">Ground-breaking Inventions</span>
+                </h1>
+                <p class="hero-desc reveal reveal-delay-2">
+                    <strong>Backend Software Engineer | AI & Data Systems</strong>
+                    <br>
+                    I architect scalable server-side systems and integrate AI workflows that deliver production-ready results faster. Specializing in <strong>Python, Django, FastAPI</strong> and data infrastructure.
+                </p>
+                <div class="hero-buttons reveal reveal-delay-3">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="social-row reveal reveal-delay-3">
+                    <a href="https://github.com/Prosperiko" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/prosper-ossaiku" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/Prosperiko" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="mailto:prosperossaiku@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="resume/ProsperOs_res.pdf" download aria-label="Download Resume"><i class="fas fa-download"></i></a>
+                </div>
+            </div>
+            <div class="hero-photo reveal reveal-delay-2">
+                <img src="img/pic.webp" alt="Prosper Ossaiku">
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="section-header reveal">
+            <div class="section-label">About Me</div>
+            <h2 class="section-title">The Mind Behind The Architecture</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-text reveal">
+                
+                <p>I specialize in building robust backend systems, data pipelines, and AI-driven platforms. Using <strong>Python, Django, FastAPI</strong>, and data tools like <strong>Pandas</strong>, I transform complex business problems into scalable, highly-available infrastructure. </p>
+
+                <p>I don't just write code; I build solutions, lead engineering teams, and leverage Agentic AI as a multiplier to deliver 10x results. From deploying revenue-generating web apps to orchestrating databases and local AI models, I thrive at the intersection of backend logic and machine learning.</p>
+
+                <p>Driven by curiosity and a relentless pursuit of knowledge, my mission is to build impactful tools that inspire and empower people everywhere.</p>
+            </div>
+            <div class="about-stats reveal reveal-delay-1">
+                <div class="stat-card">
+                    <div class="number">2+</div>
+                    <div class="label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">7+</div>
+                    <div class="label">Projects Built</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">5+</div>
+                    <div class="label">Core Technologies</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">40%</div>
+                    <div class="label">Efficiency Boost</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <!-- <section id="skills">
+        <div class="section-header reveal">
+            <div class="section-label">Skills & Services</div>
+            <h2 class="section-title">What I Bring To The Table</h2>
+        </div>
+        <div class="skills-grid reveal">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML & CSS</span>
+            <span class="skill-tag">Data Science</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Matplotlib</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">AI Integration</span>
+            <span class="skill-tag">Data Analytics</span>
+            <span class="skill-tag">Jupyter</span>
+            <span class="skill-tag">Software Development</span>
+            <span class="skill-tag">Tableau</span>
+            <span class="skill-tag">Power BI</span>
+        </div>
+    </section> -->
+
+    <section id="skills">
+        <div class="section-header reveal">
+            <div class="section-label">Skills & Services</div>
+            <h2 class="section-title">What I Bring To The Table</h2>
+        </div>
+        <div class="skills-categories reveal">
+            <div class="skill-category">
+                <h3>Backend & APIs</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Django</span>
+                    <span class="skill-tag">FastAPI</span>
+                    <span class="skill-tag">Flask</span>
+                    <span class="skill-tag">Javascript</span>
+                    <span class="skill-tag">RESTful APIs</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>AI & Machine Learning</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Agentic Workflows</span>
+                    <span class="skill-tag">Google Trained</span>
+                    <span class="skill-tag">Local/Offline Model Deployment</span>
+                    <span class="skill-tag">OpenAI Integration</span>
+                    <span class="skill-tag">Scikit-Learn</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Data & Infrastructure</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">SQL / MySQL</span>
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">NumPy</span>
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">Git & GitHub</span>
+                    <span class="skill-tag">Render</span>
+                    <span class="skill-tag">Postgres</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Core Competencies</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">System Architecture</span>
+                    <span class="skill-tag">Data Analytics</span>
+                    <span class="skill-tag">Technical Team Leadership</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Experience -->
+    <section id="experience">
+        <div class="section-header reveal">
+            <div class="section-label">Experience</div>
+            <h2 class="section-title">Where I've Made Impact</h2>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-date">March 2026 — Present</div>
+                <div class="timeline-title">Skill based Backend Engineering Team Lead</div>
+                <div class="timeline-company">Cowrywise</div>
+                <div class="timeline-desc">Engineered and shipped 3+ lightweight microservices and external API integrations using FastAPI, optimizing data retrieval and backend communication while leading a team of backend developers, managing project deliverables, and resolving technical challenges.</div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-date">March 2026 — Present</div>
+                <div class="timeline-title">Fullstack Engineering Team Lead</div>
+                <div class="timeline-company">Programmify Internship Program (PIP4)</div>
+                <div class="timeline-desc">Directed an engineering team through weekly challenges and intensive "Build Weeks," focusing on rapid prototyping, creative problem-solving, and collaborative development. Ennsuring consistent team communication across platforms, high active engagement and reducing unresponsiveness.</div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-date">March 2025 — Present</div>
+                <div class="timeline-title">Lead Developer</div>
+                <div class="timeline-company">CoinFlux Ltd</div>
+                <div class="timeline-desc">Led development of a finance tracker implementing authentication and data analytics modules. Built an AI chatbot for personalized financial recommendations, enhancing user data insights and security.</div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-date">March 2025 — Present</div>
+                <div class="timeline-title">Hult Prize Campus Director</div>
+                <div class="timeline-company">Hult Prize UNIBEN</div>
+                <div class="timeline-desc">Spearheaded community tech initiatives and innovations, managed executive teams, and drove technical content campaigns to a global audience.</div>
+            </div>
+
+
+
+            <div class="timeline-item reveal">
+                <div class="timeline-date">August 2024 — February 2025</div>
+                <div class="timeline-title">Python Developer Trainee</div>
+                <div class="timeline-company">Yomi Denzel Foundation</div>
+                <div class="timeline-desc">Contributed to multiple projects from simple calculators to mini games to predictive machine learning. Assisted peers in debugging and reviewing code, fostering team productivity and increasing efficiency by 40%.</div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-date">October 2024 — February 2025</div>
+                <div class="timeline-title">Python Data Analyst</div>
+                <div class="timeline-company">Yomi Denzel Foundation</div>
+                <div class="timeline-desc">Cleaned and standardized large datasets using Pandas and NumPy. Automated processes to save analysis time and reduce manual errors. Built visual dashboards in Tableau and analysis with Matplotlib, providing actionable insights.</div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-date">July 2024 — September 2024</div>
+                <div class="timeline-title">Data Analyst Intern</div>
+                <div class="timeline-company">KultureHire — India</div>
+                <div class="timeline-desc">Completed a capstone project analyzing business data, presented through comprehensive Power BI dashboards and reports. Enhanced communication skills by effectively presenting complex technical findings to non-technical audiences.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="section-header reveal">
+            <div class="section-label">Portfolio</div>
+            <h2 class="section-title">Featured Projects</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <!-- <span class="placeholder-icon">💰</span> -->
+                         <img src="img/backgound/fincom.webp" alt="Fincom screenshot" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">Fincom — Finance Tracker</div>
+                    <div class="project-desc">Intelligent finance tracker with AI chatbot, budget management, and personalized business recommendations. Integrated GitHub Copilot and OpenAI APIs to deliver insights 2x faster. Improved UX by 20%.</div>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Flask</span>
+                        <span class="project-tag">SQLite</span>
+                        <span class="project-tag">OpenAI API</span>
+                    </div>
+                    <a href="https://fincom.onrender.com" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+                </div>
+            </div>
+
+
+            
+
+
+             <div class="project-card reveal">
+                <div class="project-image">
+                    <!-- <span class="placeholder-icon">💰</span> -->
+                         <img src="img/backgound/gis.webp" alt="Fincom screenshot" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">Giscopo- Automated Academic Report Application</div>
+                    <div class="project-desc">Architected and deployed a web application that connects to Google API, takes satellite images of specified places and generates personalized academic reports. Managed end-to-end development from database design to production hosting.</div>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">FastAPI</span>
+                        <span class="project-tag">Onrender</span>
+                        <span class="project-tag">OpenAI API</span>
+                        <span class="project-tag">Groq API</span>
+                        <span class="project-tag">Google API</span>
+                    </div>
+                    <a href="https://giscopo.onrender.com" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+                </div>
+            </div>
+
+
+            <div class="project-card reveal reveal-delay-1">
+                <div class="project-image">
+                    
+                     <img src="img/backgound/docai.webp" alt="YouTube Clone screenshot" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">AI Document Intelligence Engine</div>
+                    <div class="project-desc"> Allows users to upload documents and query them in real-time. Engineered a dynamic "Bring Your Own Key" (BYOK) architecture for seamless OpenAI API integration and implemented OCR to extract text from image-heavy PDFs.</div>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">OpenAI API</span>
+                        <span class="project-tag">RAG</span>
+                        <span class="project-tag">OCR</span>
+                        
+                    </div>
+                    <a href="https://docuaimind.streamlit.app/" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+                </div>
+            </div>
+
+
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <!-- <span class="placeholder-icon">💰</span> -->
+                         <img src="img/backgound/est.webp" alt="Xthetics screenshot" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">Xthetics</div>
+                    <div class="project-desc">Engineered and deployed a highly interactive, production-ready landing page for a retail brand. Optimized for fast load times, responsive design, and seamless user experience across all devices.</div>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">Javascript</span>
+                        <span class="project-tag">Vercel API</span>
+                    </div>
+                    <a href="https://xthetics.vercel.app" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+                </div>
+            </div>
+
+            <!-- YOU CAN CHOOSE TO EDIT WHEN YOU ADD -->
+<!-- 
+            
+
+            <div class="project-card reveal reveal-delay-2">
+                <div class="project-image">
+                    
+                    <img src="img/backgound/rps.webp" alt="RPS screenshot" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">Rock Paper Scissors</div>
+                    <div class="project-desc">Mini game demonstrating DOM manipulation, loops, localStorage for score persistence, autoplay function, and keyboard events. A strong display of JavaScript fundamentals.</div>
+                    <div class="project-tags">
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">HTML/CSS</span>
+                    </div>
+                    <a href="https://prosperiko.github.io/RPS-game" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card reveal reveal-delay-3">
+                <div class="project-image">
+                    
+                    <img src="img/backgound/rps.webp" alt="RPS screenshot" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">Rock Paper Scissors</div>
+                    <div class="project-desc">Mini game demonstrating DOM manipulation, loops, localStorage for score persistence, autoplay function, and keyboard events. A strong display of JavaScript fundamentals.</div>
+                    <div class="project-tags">
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">HTML/CSS</span>
+                    </div>
+                    <a href="https://prosperiko.github.io/RPS-game" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card reveal reveal-delay-4">
+                <div class="project-image">
+                    
+                    <img src="img/backgound/rps.webp" alt="RPS screenshot" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">Rock Paper Scissors</div>
+                    <div class="project-desc">Mini game demonstrating DOM manipulation, loops, localStorage for score persistence, autoplay function, and keyboard events. A strong display of JavaScript fundamentals.</div>
+                    <div class="project-tags">
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">HTML/CSS</span>
+                    </div>
+                    <a href="https://prosperiko.github.io/RPS-game" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+                </div>
+            </div>
+            -->
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="section-header reveal">
+            <div class="section-label">Contact</div>
+            <h2 class="section-title">Let's Build Something Together</h2>
+        </div>
+        <div class="contact-grid">
+            <div class="reveal">
+                <p class="contact-text">I'm always open to connecting with creative minds and tech enthusiasts. Whether you have a bold new project or just want to share some tech inspiration, I'd love to hear from you. Let's collaborate and make something inspiring!</p>
+                <div class="contact-links">
+                    <a href="mailto:prosperossaiku@gmail.com" class="contact-link">
+                        <div class="icon-wrap"><i class="fas fa-envelope"></i></div>
+                        <div class="link-info">
+                            <span class="link-label">Email</span>
+                            <span class="link-meta">prosperossaiku@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Prosperiko" target="_blank" rel="noopener" class="contact-link">
+                        <div class="icon-wrap"><i class="fab fa-github"></i></div>
+                        <div class="link-info">
+                            <span class="link-label">GitHub</span>
+                            <span class="link-meta">@Prosperiko</span>
+                        </div>
+                    </a>
+                    <a href="https://linkedin.com/in/prosper-ossaiku" target="_blank" rel="noopener" class="contact-link">
+                        <div class="icon-wrap"><i class="fab fa-linkedin-in"></i></div>
+                        <div class="link-info">
+                            <span class="link-label">LinkedIn</span>
+                            <span class="link-meta">prosper-ossaiku</span>
+                        </div>
+                    </a>
+                    <a href="https://x.com/Prosperiko" target="_blank" rel="noopener" class="contact-link">
+                        <div class="icon-wrap"><i class="fab fa-x-twitter"></i></div>
+                        <div class="link-info">
+                            <span class="link-label">Twitter / X</span>
+                            <span class="link-meta">@Prosperiko</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-card reveal reveal-delay-1">
+                <p>Want a deeper look at my experience and skills?</p>
+                <a href="resume/ProsperOs_res.pdf" download class="btn btn-primary" style="width:100%; justify-content:center;">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 <a href="https://ossaiku.tech">Prosper Ossaiku</a>. Crafted with curiosity and code.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
