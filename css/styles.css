@@ -821,8 +821,6 @@ footer a:hover { color: var(--accent); }
 
 
 
-
-
 .skills-categories {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
