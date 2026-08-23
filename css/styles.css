@@ -1,6 +1,5 @@
 /* ===== CSS VARIABLES ===== */
 :root {
-    /* Backgrounds & Text (Left exactly as you had them - they are great) */
     --bg-primary: #0a0a0f;
     --bg-secondary: #12121a;
     --bg-card: #16161f;
@@ -8,19 +7,15 @@
     --text-primary: #f0f0f5;
     --text-secondary: #a0a0b0;
     --text-muted: #6b6b7b;
+
+    --accent: #06b6d4;     
+    --accent-secondary: #3b82f6; 
     
-    /* THE FIX: Unified Accents */
-    /* Pulled directly from your new gradient so everything matches */
-    --accent: #06b6d4;          /* The bright cyan for primary buttons/links */
-    --accent-secondary: #3b82f6; /* The solid blue for hover states */
-    
-    /* The Gradient (Your chosen Cyber vibe) */
     --accent-gradient: linear-gradient(135deg, #06b6d4 0%, #3b82f6 50%, #818cf8 100%);
     
-    /* THE FIX: Sharper, more technical shapes */
-    --border: rgba(255, 255, 255, 0.08); /* Slightly bumped opacity so borders are crisp */
-    --radius: 8px;   /* Sharper corners for cards */
-    --radius-sm: 4px; /* Sharper corners for buttons/tags */
+    --border: rgba(255, 255, 255, 0.08); 
+    --radius: 8px;   
+    --radius-sm: 4px;
     
     --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
