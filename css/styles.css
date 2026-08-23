@@ -786,8 +786,8 @@ footer a:hover { color: var(--accent); }
 }
 
 .hero-photo img {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 10%;
     object-fit: cover;
     object-position: top;
