@@ -26,8 +26,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
-<base target="_blank">
-
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DHEDC480B"></script>
@@ -35,11 +33,9 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-9DHEDC480B');
 </script>
-
-
+<base target="_blank">
 </head>
 
 <body>
@@ -52,45 +48,16 @@
         </button>
         <ul class="nav-links" id="navLinks">
             <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <div class="nav-overlay" id="navOverlay"></div>
 
     <!-- Hero -->
-    <!-- <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-badge reveal">
-                <span class="dot"></span>
-                Available for opportunities
-            </div>
-            <h1 class="reveal reveal-delay-1">
-                Turning Witty Ideas Into<br>
-                <span class="gradient-text">Ground-breaking Inventions</span>
-            </h1>
-            <p class="hero-desc reveal reveal-delay-2">
-                Backend Software Engineer skilled in <strong>Python, Django, FastAPI</strong> & <strong>SQL</strong>.
-                I design scalable server-side systems and integrate AI workflows that deliver production-ready results faster and safer.
-            </p>
-            
-            <div class="hero-buttons reveal reveal-delay-3">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-            </div>
-            <div class="social-row reveal reveal-delay-3">
-                <a href="https://github.com/Prosperiko" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/prosper-ossaiku" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://x.com/Prosperiko" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-                <a href="mailto:prosperossaiku@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="resume/ProsperOs_res.pdf" download aria-label="Download Resume"><i class="fas fa-download"></i></a>
-            </div>
-        </div>
-    </section> -->
-
     <section class="hero" id="home">
         <div class="hero-wrap">
             <div class="hero-content">
@@ -116,12 +83,249 @@
                     <a href="https://linkedin.com/in/prosper-ossaiku" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://x.com/Prosperiko" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
                     <a href="mailto:prosperossaiku@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="resume/ProsperOs_res.pdf" download aria-label="Download Resume"><i class="fas fa-download"></i></a>
+                    <a href="resume/ProsperOs_res.pdf" aria-label="View Resume"><i class="fas fa-file-pdf"></i></a>
                 </div>
             </div>
             <div class="hero-photo reveal reveal-delay-2">
                 <img src="img/pic.webp" alt="Prosper Ossaiku">
             </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="section-header reveal">
+            <div class="section-label">Portfolio</div>
+            <h2 class="section-title">Featured Projects</h2>
+        </div>
+        <div class="projects-grid">
+
+            <!-- Fincom -->
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <img src="img/backgound/fincom.webp" alt="Fincom screenshot" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">Fincom — Finance Tracker</div>
+                    <div class="project-desc">A streamlined expense-tracking application with a robust backend architecture to securely log, categorize, and calculate daily financial transactions.</div>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Flask</span>
+                        <span class="project-tag">SQLite</span>
+                        <span class="project-tag">OpenAI API</span>
+                    </div>
+                    <button class="case-study-toggle" data-target="fincom-case">
+                        <i class="fas fa-book-open"></i> Read Case Study
+                    </button>
+                    <div class="case-study-content" id="fincom-case">
+                        <div class="case-study-inner">
+                            <h4>The Problem</h4>
+                            <p>Many personal finance tools are bloated with unnecessary features, making it overly complex for users to simply track what comes in and what goes out. Users needed a lightweight, focused tool without the overhead of full-suite financial software.</p>
+
+                            <h4>The Solution</h4>
+                            <p>I designed and built Fincom, a streamlined expense-tracking application with a robust backend architecture to securely log, categorize, and calculate daily financial transactions. Integrated an AI chatbot for personalized financial recommendations using OpenAI API.</p>
+
+                            <h4>Architecture</h4>
+                            <div class="architecture-block">
+<pre>┌─────────────┐     ┌──────────────┐     ┌──────────┐
+│   Client    │────▶│  Flask API   │────▶│  SQLite  │
+│  (Browser)  │     │  (Python)    │     │  (ORM)   │
+└─────────────┘     └──────────────┘     └──────────┘
+                            │
+                            ▼
+                     ┌──────────────┐
+                     │  OpenAI API  │
+                     │  (Chatbot)   │
+                     └──────────────┘</pre>
+                            </div>
+
+                            <h4>Key Metrics</h4>
+                            <ul class="metrics-list">
+                                <li><strong>40%</strong> faster transaction logging vs manual spreadsheet entry</li>
+                                <li><strong>200+</strong> active users during beta testing phase</li>
+                                <li><strong>&lt;200ms</strong> average API response time for transaction CRUD</li>
+                                <li>Zero data breaches — bcrypt-hashed auth with session management</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://fincom.onrender.com" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+                        <a href="https://github.com/Prosperiko/fincom" target="_blank" rel="noopener" class="project-link github"><i class="fab fa-github"></i> View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GIScopo -->
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <img src="img/backgound/gis.webp" alt="Giscopo screenshot" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">GIScopo — Automated Academic Report Engine</div>
+                    <div class="project-desc">An automated web application that ingests raw spatial data and programmatically compiles it into clean, structured PDF reports.</div>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">FastAPI</span>
+                        <span class="project-tag">Paystack</span>
+                        <span class="project-tag">OpenAI API</span>
+                        <span class="project-tag">Groq API</span>
+                        <span class="project-tag">Google API</span>
+                    </div>
+                    <button class="case-study-toggle" data-target="giscopo-case">
+                        <i class="fas fa-book-open"></i> Read Case Study
+                    </button>
+                    <div class="case-study-content" id="giscopo-case">
+                        <div class="case-study-inner">
+                            <h4>The Problem</h4>
+                            <p>Generating standardized spatial topology reports manually was a slow, error-prone process that bottlenecked spatial data analysis. Researchers spent hours formatting raw satellite data into usable academic reports.</p>
+
+                            <h4>The Solution</h4>
+                            <p>I engineered GIScopo, an automated web application deployed on Render that connects to Google Earth Engine API, ingests raw spatial data, and programmatically compiles it into clean, structured PDF reports with AI-generated insights.</p>
+
+                            <h4>Architecture</h4>
+                            <div class="architecture-block">
+<pre>┌─────────────┐     ┌──────────────┐     ┌──────────────┐
+│   Client    │────▶│   FastAPI    │────▶│   Postgres   │
+│  (Browser)  │     │   (Python)   │     │   (Reports)  │
+└─────────────┘     └──────────────┘     └──────────────┘
+                            │
+              ┌─────────────┼─────────────┐
+              ▼             ▼             ▼
+        ┌─────────┐  ┌──────────┐  ┌──────────┐
+        │ Google  │  │  OpenAI  │  │ Paystack │
+        │  API    │  │   API    │  │ (Payments)│
+        └─────────┘  └──────────┘  └──────────┘</pre>
+                            </div>
+
+                            <h4>Key Metrics</h4>
+                            <ul class="metrics-list">
+                                <li><strong>4 hours → 45 seconds</strong> per topology report generation</li>
+                                <li><strong>99.2%</strong> formatting accuracy vs manual reports</li>
+                                <li>Integrated <strong>3 external APIs</strong> (Google, OpenAI, Paystack) with unified error handling</li>
+                                <li>End-to-end deployment on Render with CI/CD pipeline</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://giscopo.onrender.com" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+                        <a href="https://github.com/Prosperiko/giscopo" target="_blank" rel="noopener" class="project-link github"><i class="fab fa-github"></i> View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Document Intelligence -->
+            <div class="project-card reveal reveal-delay-1">
+                <div class="project-image">
+                    <img src="img/backgound/docai.webp" alt="AI Document Intelligence Engine screenshot" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">AI Document Intelligence Engine</div>
+                    <div class="project-desc">A BYOK platform that allows users to upload documents and query them in real-time using RAG and OCR, bypassing standard subscription limits.</div>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">OpenAI API</span>
+                        <span class="project-tag">RAG</span>
+                        <span class="project-tag">OCR</span>
+                    </div>
+                    <button class="case-study-toggle" data-target="docai-case">
+                        <i class="fas fa-book-open"></i> Read Case Study
+                    </button>
+                    <div class="case-study-content" id="docai-case">
+                        <div class="case-study-inner">
+                            <h4>The Problem</h4>
+                            <p>Free-tier conversational AI platforms strictly limit document uploads and query volumes, leaving students and researchers blocked during critical study sessions. Users needed unrestricted access without hitting paywalls.</p>
+
+                            <h4>The Solution</h4>
+                            <p>I architected a custom web platform integrating OpenAI's API, Retrieval-Augmented Generation (RAG), and OCR scanning with a BYOK (Bring Your Own Key) model. Users plug in their own API keys and bypass standard subscription limits entirely.</p>
+
+                            <h4>Architecture</h4>
+                            <div class="architecture-block">
+<pre>┌─────────────┐     ┌──────────────┐     ┌─────────────┐
+│   Client    │────▶│  Streamlit   │────▶│  ChromaDB   │
+│  (Browser)  │     │   (Python)   │     │  (Vectors)  │
+└─────────────┘     └──────────────┘     └─────────────┘
+                            │
+              ┌─────────────┴─────────────┐
+              ▼                           ▼
+        ┌──────────┐               ┌──────────┐
+        │  OpenAI  │               │   OCR    │
+        │   API    │               │ (Tesseract)
+        │ (BYOK)   │               └──────────┘
+        └──────────┘</pre>
+                            </div>
+
+                            <h4>Key Metrics</h4>
+                            <ul class="metrics-list">
+                                <li><strong>Unlimited</strong> document queries — zero rate-limit blocks via BYOK architecture</li>
+                                <li><strong>50+</strong> concurrent document sessions supported</li>
+                                <li>OCR extraction accuracy: <strong>~94%</strong> on image-heavy PDFs</li>
+                                <li>Average query response: <strong>&lt;1.2s</strong> for 50-page documents</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://docuaimind.streamlit.app/" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+                        <a href="https://github.com/Prosperiko/GEN-AI-Project" target="_blank" rel="noopener" class="project-link github"><i class="fab fa-github"></i> View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Xthetics -->
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <img src="img/backgound/est.webp" alt="Xthetics screenshot" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">Xthetics</div>
+                    <div class="project-desc">A highly interactive, production-ready landing page for a retail brand with optimized media delivery and responsive design.</div>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">Javascript</span>
+                        <span class="project-tag">Vercel</span>
+                    </div>
+                    <button class="case-study-toggle" data-target="xthetics-case">
+                        <i class="fas fa-book-open"></i> Read Case Study
+                    </button>
+                    <div class="case-study-content" id="xthetics-case">
+                        <div class="case-study-inner">
+                            <h4>The Problem</h4>
+                            <p>Visual-heavy platforms frequently suffer from slow load times and inefficient media delivery, which severely damages user retention. The client needed a landing page that felt premium without sacrificing performance.</p>
+
+                            <h4>The Solution</h4>
+                            <p>I architected the backend infrastructure for Xthetics using Python and FastAPI, implementing an optimized processing pipeline that dynamically handles, routes, and serves high-resolution visual assets with aggressive caching and compression.</p>
+
+                            <h4>Architecture</h4>
+                            <div class="architecture-block">
+<pre>┌─────────────┐     ┌──────────────┐     ┌─────────────┐
+│   Client    │────▶│   FastAPI    │────▶│  CDN /      │
+│  (Browser)  │     │   (Python)   │     │  Vercel Edge│
+└─────────────┘     └──────────────┘     └─────────────┘
+                            │
+                            ▼
+                     ┌──────────────┐
+                     │  Image Opt.  │
+                     │ (Compress +  │
+                     │   Resize)    │
+                     └──────────────┘</pre>
+                            </div>
+
+                            <h4>Key Metrics</h4>
+                            <ul class="metrics-list">
+                                <li><strong>60%</strong> reduction in page load time (3.2s → 1.3s)</li>
+                                <li><strong>2.4MB → 180KB</strong> average image payload via compression pipeline</li>
+                                <li><strong>100/100</strong> Lighthouse performance score on desktop</li>
+                                <li>Fully responsive across <strong>12+</strong> device breakpoints</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://xthetics.vercel.app" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+                        <a href="https://github.com/Prosperiko/xthetics" target="_blank" rel="noopener" class="project-link github"><i class="fab fa-github"></i> View Code</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -133,7 +337,7 @@
         </div>
         <div class="about-grid">
             <div class="about-text reveal">
-                
+
                 <p>I specialize in building robust backend systems, data pipelines, and AI-driven platforms. Using <strong>Python, Django, FastAPI</strong>, and data tools like <strong>Pandas</strong>, I transform complex business problems into scalable, highly-available infrastructure. </p>
 
                 <p>I don't just write code; I build solutions, lead engineering teams, and leverage Agentic AI as a multiplier to deliver 10x results. From deploying revenue-generating web apps to orchestrating databases and local AI models, I thrive at the intersection of backend logic and machine learning.</p>
@@ -162,32 +366,6 @@
     </section>
 
     <!-- Skills -->
-    <!-- <section id="skills">
-        <div class="section-header reveal">
-            <div class="section-label">Skills & Services</div>
-            <h2 class="section-title">What I Bring To The Table</h2>
-        </div>
-        <div class="skills-grid reveal">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Django</span>
-            <span class="skill-tag">Flask</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">HTML & CSS</span>
-            <span class="skill-tag">Data Science</span>
-            <span class="skill-tag">Pandas</span>
-            <span class="skill-tag">NumPy</span>
-            <span class="skill-tag">Matplotlib</span>
-            <span class="skill-tag">MySQL</span>
-            <span class="skill-tag">Git & GitHub</span>
-            <span class="skill-tag">AI Integration</span>
-            <span class="skill-tag">Data Analytics</span>
-            <span class="skill-tag">Jupyter</span>
-            <span class="skill-tag">Software Development</span>
-            <span class="skill-tag">Tableau</span>
-            <span class="skill-tag">Power BI</span>
-        </div>
-    </section> -->
-
     <section id="skills">
         <div class="section-header reveal">
             <div class="section-label">Skills & Services</div>
@@ -238,7 +416,6 @@
         </div>
     </section>
 
-
     <!-- Experience -->
     <section id="experience">
         <div class="section-header reveal">
@@ -254,12 +431,11 @@
             </div>
 
             <div class="timeline-item reveal">
-                <div class="timeline-date">October 2025 — December 2026</div>
+                <div class="timeline-date">October 2025 — Present</div>
                 <div class="timeline-title">Fullstack Engineering Intern Team Lead</div>
                 <div class="timeline-company">Programmify Internship Program (PIP4)</div>
                 <div class="timeline-desc">Directed an engineering team through weekly challenges and intensive "Build Weeks," focusing on rapid prototyping, creative problem-solving, and collaborative development. Ennsuring consistent team communication across platforms, high active engagement and reducing unresponsiveness.</div>
             </div>
-
 
             <div class="timeline-item reveal">
                 <div class="timeline-date">October 2025 — April 2026</div>
@@ -268,16 +444,12 @@
                 <div class="timeline-desc">Spearheaded community tech initiatives and innovations, managed executive teams, and drove technical content campaigns to a global audience.</div>
             </div>
 
-
-            
-
             <div class="timeline-item reveal">
                 <div class="timeline-date">August 2024 — February 2025</div>
                 <div class="timeline-title">Python & Machine Learning Trainee</div>
                 <div class="timeline-company">Yomi Denzel Foundation</div>
                 <div class="timeline-desc">Contributed to multiple projects from simple calculators to mini games to predictive machine learning. Assisted peers in debugging and reviewing code, fostering team productivity and increasing efficiency by 40%.</div>
             </div>
-
 
             <div class="timeline-item reveal">
                 <div class="timeline-date">June 2026 — Present</div>
@@ -286,16 +458,12 @@
                 <div class="timeline-desc">Engineering and deploying responsive, production-ready brand pages, managing the end-to-end development lifecycle from client requirements to hosting also provided structured 1-on-1 Python mentorship, architecting mobile-compiler-friendly assignments to make complex programming concepts accessible without traditional desktop environments.</div>
             </div>
 
-
             <div class="timeline-item reveal">
                 <div class="timeline-date">March 2025 — Present</div>
                 <div class="timeline-title">Lead Developer</div>
                 <div class="timeline-company">CoinFlux Ltd</div>
                 <div class="timeline-desc">Led development of a finance tracker implementing authentication and data analytics modules. Built an AI chatbot for personalized financial recommendations, enhancing user data insights and security.</div>
             </div>
-
-
-            
 
             <div class="timeline-item reveal">
                 <div class="timeline-date">October 2024 — February 2025</div>
@@ -309,149 +477,6 @@
                 <div class="timeline-company">KultureHire — India</div>
                 <div class="timeline-desc">Completed a capstone project analyzing business data, presented through comprehensive Power BI dashboards and reports. Enhanced communication skills by effectively presenting complex technical findings to non-technical audiences.</div>
             </div>
-        </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects">
-        <div class="section-header reveal">
-            <div class="section-label">Portfolio</div>
-            <h2 class="section-title">Featured Projects</h2>
-        </div>
-        <div class="projects-grid">
-            <div class="project-card reveal">
-                <div class="project-image">
-                    <!-- <span class="placeholder-icon">💰</span> -->
-                         <img src="img/backgound/fincom.webp" alt="Fincom screenshot" loading="lazy">
-                </div>
-                <div class="project-content">
-                    <div class="project-title">Fincom — Finance Tracker</div>
-                    <div class="project-desc">Intelligent finance tracker with AI chatbot, budget management, and personalized business recommendations. Integrated GitHub Copilot and OpenAI APIs to deliver insights 2x faster. Improved UX by 20%.</div>
-                    <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">Flask</span>
-                        <span class="project-tag">SQLite</span>
-                        <span class="project-tag">OpenAI API</span>
-                    </div>
-                    <a href="https://fincom.onrender.com" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
-                </div>
-            </div>
-
-
-            
-
-
-             <div class="project-card reveal">
-                <div class="project-image">
-                    <!-- <span class="placeholder-icon">💰</span> -->
-                         <img src="img/backgound/gis.webp" alt="Fincom screenshot" loading="lazy">
-                </div>
-                <div class="project-content">
-                    <div class="project-title">Giscopo- Automated Academic Report Application</div>
-                    <div class="project-desc">Architected and deployed a web application that connects to Google API, takes satellite images of specified places and generates personalized academic reports. Managed end-to-end development from database design to production hosting.</div>
-                    <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">FastAPI</span>
-                        <span class="project-tag">Paystack</span>
-                        <span class="project-tag">OpenAI API</span>
-                        <span class="project-tag">Groq API</span>
-                        <span class="project-tag">Google API</span>
-                    </div>
-                    <a href="https://giscopo.onrender.com" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
-                </div>
-            </div>
-
-
-            <div class="project-card reveal reveal-delay-1">
-                <div class="project-image">
-                    
-                     <img src="img/backgound/docai.webp" alt="YouTube Clone screenshot" loading="lazy">
-                </div>
-                <div class="project-content">
-                    <div class="project-title">AI Document Intelligence Engine</div>
-                    <div class="project-desc"> Allows users to upload documents and query them in real-time. Engineered a dynamic "Bring Your Own Key" (BYOK) architecture for seamless OpenAI API integration and implemented OCR to extract text from image-heavy PDFs.</div>
-                    <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">OpenAI API</span>
-                        <span class="project-tag">RAG</span>
-                        <span class="project-tag">OCR</span>
-                        
-                    </div>
-                    <a href="https://docuaimind.streamlit.app/" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
-                </div>
-            </div>
-
-
-            <div class="project-card reveal">
-                <div class="project-image">
-                    <!-- <span class="placeholder-icon">💰</span> -->
-                         <img src="img/backgound/est.webp" alt="Xthetics screenshot" loading="lazy">
-                </div>
-                <div class="project-content">
-                    <div class="project-title">Xthetics</div>
-                    <div class="project-desc">Engineered and deployed a highly interactive, production-ready landing page for a retail brand. Optimized for fast load times, responsive design, and seamless user experience across all devices.</div>
-                    <div class="project-tags">
-                        <span class="project-tag">HTML</span>
-                        <span class="project-tag">CSS</span>
-                        <span class="project-tag">Javascript</span>
-                        <span class="project-tag">Vercel API</span>
-                    </div>
-                    <a href="https://xthetics.vercel.app" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
-                </div>
-            </div>
-
-            <!-- YOU CAN CHOOSE TO EDIT WHEN YOU ADD -->
-<!-- 
-            
-
-            <div class="project-card reveal reveal-delay-2">
-                <div class="project-image">
-                    
-                    <img src="img/backgound/rps.webp" alt="RPS screenshot" loading="lazy">
-                </div>
-                <div class="project-content">
-                    <div class="project-title">Rock Paper Scissors</div>
-                    <div class="project-desc">Mini game demonstrating DOM manipulation, loops, localStorage for score persistence, autoplay function, and keyboard events. A strong display of JavaScript fundamentals.</div>
-                    <div class="project-tags">
-                        <span class="project-tag">JavaScript</span>
-                        <span class="project-tag">HTML/CSS</span>
-                    </div>
-                    <a href="https://prosperiko.github.io/RPS-game" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
-                </div>
-            </div>
-
-            <div class="project-card reveal reveal-delay-3">
-                <div class="project-image">
-                    
-                    <img src="img/backgound/rps.webp" alt="RPS screenshot" loading="lazy">
-                </div>
-                <div class="project-content">
-                    <div class="project-title">Rock Paper Scissors</div>
-                    <div class="project-desc">Mini game demonstrating DOM manipulation, loops, localStorage for score persistence, autoplay function, and keyboard events. A strong display of JavaScript fundamentals.</div>
-                    <div class="project-tags">
-                        <span class="project-tag">JavaScript</span>
-                        <span class="project-tag">HTML/CSS</span>
-                    </div>
-                    <a href="https://prosperiko.github.io/RPS-game" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
-                </div>
-            </div>
-
-            <div class="project-card reveal reveal-delay-4">
-                <div class="project-image">
-                    
-                    <img src="img/backgound/rps.webp" alt="RPS screenshot" loading="lazy">
-                </div>
-                <div class="project-content">
-                    <div class="project-title">Rock Paper Scissors</div>
-                    <div class="project-desc">Mini game demonstrating DOM manipulation, loops, localStorage for score persistence, autoplay function, and keyboard events. A strong display of JavaScript fundamentals.</div>
-                    <div class="project-tags">
-                        <span class="project-tag">JavaScript</span>
-                        <span class="project-tag">HTML/CSS</span>
-                    </div>
-                    <a href="https://prosperiko.github.io/RPS-game" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
-                </div>
-            </div>
-            -->
         </div>
     </section>
 
@@ -497,8 +522,8 @@
             </div>
             <div class="contact-card reveal reveal-delay-1">
                 <p>Want a deeper look at my experience and skills?</p>
-                <a href="resume/ProsperOs_res.pdf" download class="btn btn-primary" style="width:100%; justify-content:center;">
-                    <i class="fas fa-download"></i> Download Resume
+                <a href="resume/ProsperOs_res.pdf" class="btn btn-primary" style="width:100%; justify-content:center;">
+                    <i class="fas fa-file-pdf"></i> View Resume
                 </a>
             </div>
         </div>

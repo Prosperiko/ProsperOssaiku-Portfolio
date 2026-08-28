@@ -84,3 +84,36 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// ===== Case Study Toggle =====
+document.querySelectorAll('.case-study-toggle').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const targetId = this.getAttribute('data-target');
+        const content = document.getElementById(targetId);
+
+        if (!content) return;
+
+        const isOpen = content.classList.contains('open');
+
+        // Close all other open case studies (optional — comment out if you want multiple open)
+        document.querySelectorAll('.case-study-content.open').forEach(el => {
+            if (el.id !== targetId) {
+                el.classList.remove('open');
+                const otherBtn = document.querySelector(`[data-target="${el.id}"]`);
+                if (otherBtn) otherBtn.classList.remove('active');
+            }
+        });
+
+        // Toggle current
+        content.classList.toggle('open', !isOpen);
+        this.classList.toggle('active', !isOpen);
+
+        // Update button text
+        const icon = this.querySelector('i');
+        if (!isOpen) {
+            this.innerHTML = '<i class="fas fa-chevron-up"></i> Hide Case Study';
+        } else {
+            this.innerHTML = '<i class="fas fa-book-open"></i> Read Case Study';
+        }
+    });
+});
