@@ -85,35 +85,73 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ===== Case Study Toggle =====
-document.querySelectorAll('.case-study-toggle').forEach(btn => {
-    btn.addEventListener('click', function() {
-        const targetId = this.getAttribute('data-target');
-        const content = document.getElementById(targetId);
+// ===== MODAL SYSTEM =====
+const modalTriggers = document.querySelectorAll('.case-study-btn');
+const modalOverlays = document.querySelectorAll('.modal-overlay');
+let activeModal = null;
+let scrollY = 0;
 
-        if (!content) return;
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (!modal) return;
 
-        const isOpen = content.classList.contains('open');
+    // Store scroll position
+    scrollY = window.pageYOffset;
 
-        // Close all other open case studies (optional — comment out if you want multiple open)
-        document.querySelectorAll('.case-study-content.open').forEach(el => {
-            if (el.id !== targetId) {
-                el.classList.remove('open');
-                const otherBtn = document.querySelector(`[data-target="${el.id}"]`);
-                if (otherBtn) otherBtn.classList.remove('active');
-            }
-        });
+    // Lock body scroll
+    document.body.classList.add('modal-open');
+    document.body.style.top = `-${scrollY}px`;
 
-        // Toggle current
-        content.classList.toggle('open', !isOpen);
-        this.classList.toggle('active', !isOpen);
+    // Show modal
+    modal.classList.add('active');
+    activeModal = modal;
 
-        // Update button text
-        const icon = this.querySelector('i');
-        if (!isOpen) {
-            this.innerHTML = '<i class="fas fa-chevron-up"></i> Hide Case Study';
-        } else {
-            this.innerHTML = '<i class="fas fa-book-open"></i> Read Case Study';
+    // Focus trap for accessibility
+    const focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+    if (focusableElements.length) {
+        focusableElements[0].focus();
+    }
+}
+
+function closeModal() {
+    if (!activeModal) return;
+
+    activeModal.classList.remove('active');
+
+    // Restore body scroll
+    document.body.classList.remove('modal-open');
+    document.body.style.top = '';
+    window.scrollTo(0, scrollY);
+
+    activeModal = null;
+}
+
+// Open modal on button click
+modalTriggers.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const modalId = btn.getAttribute('data-modal');
+        openModal(modalId);
+    });
+});
+
+// Close modal on overlay click (but not modal content)
+modalOverlays.forEach(overlay => {
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+            closeModal();
         }
     });
+});
+
+// Close modal on close button click
+document.querySelectorAll('.modal-close').forEach(btn => {
+    btn.addEventListener('click', closeModal);
+});
+
+// Close modal on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && activeModal) {
+        closeModal();
+    }
 });

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Prosper Ossaiku | Backend Software Engineer — Building Intelligent backend systems tto solve real problems.">
+    <meta name="description" content="Prosper Ossaiku | Backend Software Engineer — Building Intelligent backend systems to solve real problems.">
 
     <meta property="og:site_name" content="Prosper Ossaiku">
     <meta property="og:url" content="https://ossaiku.tech">
@@ -35,6 +35,7 @@
   gtag('js', new Date());
   gtag('config', 'G-9DHEDC480B');
 </script>
+<base target="_blank">
 <base target="_blank">
 </head>
 
@@ -114,40 +115,9 @@
                         <span class="project-tag">SQLite</span>
                         <span class="project-tag">OpenAI API</span>
                     </div>
-                    <button class="case-study-toggle" data-target="fincom-case">
+                    <button class="case-study-btn" data-modal="modal-fincom">
                         <i class="fas fa-book-open"></i> Read Case Study
                     </button>
-                    <div class="case-study-content" id="fincom-case">
-                        <div class="case-study-inner">
-                            <h4>The Problem</h4>
-                            <p>Many personal finance tools are bloated with unnecessary features, making it overly complex for users to simply track what comes in and what goes out. Users needed a lightweight, focused tool without the overhead of full-suite financial software.</p>
-
-                            <h4>The Solution</h4>
-                            <p>I led the team that designed and built Fincom, a streamlined expense-tracking application with a robust backend architecture to securely log, categorize, and calculate daily financial transactions. Integrated an AI chatbot for personalized financial recommendations using OpenAI API.</p>
-
-                            <h4>Architecture</h4>
-                            <div class="architecture-block">
-<pre>┌─────────────┐     ┌──────────────┐     ┌──────────┐
-│   Client    │────▶│  Flask API   │────▶│  SQLite  │
-│  (Browser)  │     │  (Python)    │     │  (ORM)   │
-└─────────────┘     └──────────────┘     └──────────┘
-                            │
-                            ▼
-                     ┌──────────────┐
-                     │  OpenAI API  │
-                     │  (Chatbot)   │
-                     └──────────────┘</pre>
-                            </div>
-
-                            <h4>Key Metrics</h4>
-                            <ul class="metrics-list">
-                                <li><strong>40%</strong> faster transaction logging vs manual spreadsheet entry</li>
-                                
-                                <li><strong>&lt;200ms</strong> average API response time for transaction CRUD</li>
-                                <li>Zero data breaches — bcrypt-hashed auth with session management</li>
-                            </ul>
-                        </div>
-                    </div>
                     <div class="project-links">
                         <a href="https://fincom.onrender.com" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
                         <a href="https://github.com/Prosperiko/fincom" target="_blank" rel="noopener" class="project-link github"><i class="fab fa-github"></i> View Code</a>
@@ -171,41 +141,9 @@
                         <span class="project-tag">Groq API</span>
                         <span class="project-tag">Google API</span>
                     </div>
-                    <button class="case-study-toggle" data-target="giscopo-case">
+                    <button class="case-study-btn" data-modal="modal-giscopo">
                         <i class="fas fa-book-open"></i> Read Case Study
                     </button>
-                    <div class="case-study-content" id="giscopo-case">
-                        <div class="case-study-inner">
-                            <h4>The Problem</h4>
-                            <p>Generating standardized spatial topology reports manually was a slow, error-prone process that bottlenecked spatial data analysis. Researchers spent hours formatting raw satellite data into usable academic reports.</p>
-
-                            <h4>The Solution</h4>
-                            <p>I engineered GIScopo, an automated web application deployed on Render that connects to Google Earth Engine API, ingests raw spatial data, and programmatically compiles it into clean, structured PDF reports with AI-generated insights.</p>
-
-                            <h4>Architecture</h4>
-                            <div class="architecture-block">
-<pre>┌─────────────┐     ┌──────────────┐     ┌──────────────┐
-│   Client    │────▶│   FastAPI    │────▶│   Postgres   │
-│  (Browser)  │     │   (Python)   │     │   (Reports)  │
-└─────────────┘     └──────────────┘     └──────────────┘
-                            │
-              ┌─────────────┼─────────────┐
-              ▼             ▼             ▼
-        ┌─────────┐  ┌──────────┐  ┌──────────┐
-        │ Google  │  │  OpenAI  │  │ Paystack │
-        │  API    │  │   API    │  │ (Payments)│
-        └─────────┘  └──────────┘  └──────────┘</pre>
-                            </div>
-
-                            <h4>Key Metrics</h4>
-                            <ul class="metrics-list">
-                                <li><strong>4 hours → 3 minutes </strong> per topology report generation</li>
-                                <li><strong>99.2%</strong> formatting accuracy vs manual reports</li>
-                                <li>Integrated <strong>3 external APIs</strong> (Google, OpenAI, Paystack) with unified error handling</li>
-                                <li>End-to-end deployment on Render with CI/CD pipeline</li>
-                            </ul>
-                        </div>
-                    </div>
                     <div class="project-links">
                         <a href="https://giscopo.onrender.com" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
                         <a href="https://github.com/Prosperiko/giscopo" target="_blank" rel="noopener" class="project-link github"><i class="fab fa-github"></i> View Code</a>
@@ -227,42 +165,9 @@
                         <span class="project-tag">RAG</span>
                         <span class="project-tag">OCR</span>
                     </div>
-                    <button class="case-study-toggle" data-target="docai-case">
+                    <button class="case-study-btn" data-modal="modal-docai">
                         <i class="fas fa-book-open"></i> Read Case Study
                     </button>
-                    <div class="case-study-content" id="docai-case">
-                        <div class="case-study-inner">
-                            <h4>The Problem</h4>
-                            <p>Free-tier conversational AI platforms strictly limit document uploads and query volumes, leaving students and researchers blocked during critical study sessions. Users needed unrestricted access without hitting paywalls.</p>
-
-                            <h4>The Solution</h4>
-                            <p>I architected a custom web platform integrating OpenAI's API, Retrieval-Augmented Generation (RAG), and OCR scanning with a BYOK (Bring Your Own Key) model. Users plug in their own API keys and bypass standard subscription limits entirely.</p>
-
-                            <h4>Architecture</h4>
-                            <div class="architecture-block">
-<pre>┌─────────────┐     ┌──────────────┐     ┌─────────────┐
-│   Client    │────▶│  Streamlit   │────▶│  ChromaDB   │
-│  (Browser)  │     │   (Python)   │     │  (Vectors)  │
-└─────────────┘     └──────────────┘     └─────────────┘
-                            │
-              ┌─────────────┴─────────────┐
-              ▼                           ▼
-        ┌──────────┐               ┌──────────┐
-        │  OpenAI  │               │   OCR    │
-        │   API    │               │ (Tesseract)
-        │ (BYOK)   │               └──────────┘
-        └──────────┘</pre>
-                            </div>
-
-                            <h4>Key Metrics</h4>
-                            <ul class="metrics-list">
-                                <li><strong>Less limited</strong> document queries — less noticed rate-limit blocks via BYOK architecture</li>
-                                <li><strong>50+</strong> concurrent document sessions supported</li>
-                                <li>OCR extraction accuracy: <strong>~94%</strong> on image-heavy PDFs</li>
-                                <li>Average query response: <strong>&lt;1.2s</strong> for 50-page documents</li>
-                            </ul>
-                        </div>
-                    </div>
                     <div class="project-links">
                         <a href="https://docuaimind.streamlit.app/" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
                         <a href="https://github.com/Prosperiko/GEN-AI-Project" target="_blank" rel="noopener" class="project-link github"><i class="fab fa-github"></i> View Code</a>
@@ -284,19 +189,215 @@
                         <span class="project-tag">Javascript</span>
                         <span class="project-tag">Vercel</span>
                     </div>
-                    <button class="case-study-toggle" data-target="xthetics-case">
+                    <button class="case-study-btn" data-modal="modal-xthetics">
                         <i class="fas fa-book-open"></i> Read Case Study
                     </button>
-                    <div class="case-study-content" id="xthetics-case">
-                        <div class="case-study-inner">
-                            <h4>The Problem</h4>
-                            <p>Visual-heavy platforms frequently suffer from slow load times and inefficient media delivery, which severely damages user retention. The client needed a landing page that felt premium without sacrificing performance.</p>
+                    <div class="project-links">
+                        <a href="https://xthetics.vercel.app" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+                        <a href="https://github.com/Prosperiko/xthetics" target="_blank" rel="noopener" class="project-link github"><i class="fab fa-github"></i> View Code</a>
+                    </div>
+                </div>
+            </div>
 
-                            <h4>The Solution</h4>
-                            <p>I architected the backend infrastructure for Xthetics using Python and FastAPI, implementing an optimized processing pipeline that dynamically handles, routes, and serves high-resolution visual assets with aggressive caching and compression.</p>
+        </div>
+    </section>
 
-                            <h4>Architecture</h4>
-                            <div class="architecture-block">
+    <!-- ============ MODALS ============ -->
+
+    <!-- Fincom Modal -->
+    <div class="modal-overlay" id="modal-fincom">
+        <div class="modal">
+            <button class="modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h3>Fincom — Finance Tracker</h3>
+                <p>Backend Architecture & Performance Deep Dive</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h4><i class="fas fa-exclamation-circle"></i> The Problem</h4>
+                    <p>Many personal finance tools are bloated with unnecessary features, making it overly complex for users to simply track what comes in and what goes out. Users needed a lightweight, focused tool without the overhead of full-suite financial software.</p>
+                </div>
+                <div class="modal-section">
+                    <h4><i class="fas fa-lightbulb"></i> The Solution</h4>
+                    <p>I led the team that designed and built Fincom, a streamlined expense-tracking application with a robust backend architecture to securely log, categorize, and calculate daily financial transactions. Integrated an AI chatbot for personalized financial recommendations using OpenAI API.</p>
+                </div>
+                <div class="modal-section">
+                    <h4><i class="fas fa-sitemap"></i> System Architecture</h4>
+                    <div class="architecture-block">
+<pre>┌─────────────┐     ┌──────────────┐     ┌──────────┐
+│   Client    │────▶│  Flask API   │────▶│  SQLite  │
+│  (Browser)  │     │  (Python)    │     │  (ORM)   │
+└─────────────┘     └──────────────┘     └──────────┘
+                            │
+                            ▼
+                     ┌──────────────┐
+                     │  OpenAI API  │
+                     │  (Chatbot)   │
+                     └──────────────┘</pre>
+                    </div>
+                </div>
+                <div class="modal-section">
+                    <h4><i class="fas fa-chart-line"></i> Key Metrics</h4>
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-value">40%</div>
+                            <div class="metric-label">Faster Logging</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">&lt;200ms</div>
+                            <div class="metric-label">API Response</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">Zero</div>
+                            <div class="metric-label">Data Breaches</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">bcrypt</div>
+                            <div class="metric-label">Auth Hashing</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GIScopo Modal -->
+    <div class="modal-overlay" id="modal-giscopo">
+        <div class="modal">
+            <button class="modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h3>GIScopo — Automated Academic Report Engine</h3>
+                <p>Spatial Data Pipeline & Report Generation</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h4><i class="fas fa-exclamation-circle"></i> The Problem</h4>
+                    <p>Generating standardized spatial topology reports manually was a slow, error-prone process that bottlenecked spatial data analysis. Researchers spent hours formatting raw satellite data into usable academic reports.</p>
+                </div>
+                <div class="modal-section">
+                    <h4><i class="fas fa-lightbulb"></i> The Solution</h4>
+                    <p>I engineered GIScopo, an automated web application deployed on Render that connects to Google Earth Engine API, ingests raw spatial data, and programmatically compiles it into clean, structured PDF reports with AI-generated insights.</p>
+                </div>
+                <div class="modal-section">
+                    <h4><i class="fas fa-sitemap"></i> System Architecture</h4>
+                    <div class="architecture-block">
+<pre>┌─────────────┐     ┌──────────────┐     ┌──────────────┐
+│   Client    │────▶│   FastAPI    │────▶│   Postgres   │
+│  (Browser)  │     │   (Python)   │     │   (Reports)  │
+└─────────────┘     └──────────────┘     └──────────────┘
+                            │
+              ┌─────────────┼─────────────┐
+              ▼             ▼             ▼
+        ┌─────────┐  ┌──────────┐  ┌──────────┐
+        │ Google  │  │  OpenAI  │  │ Paystack │
+        │  API    │  │   API    │  │ (Payments)│
+        └─────────┘  └──────────┘  └──────────┘</pre>
+                    </div>
+                </div>
+                <div class="modal-section">
+                    <h4><i class="fas fa-chart-line"></i> Key Metrics</h4>
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-value">4h → 3m</div>
+                            <div class="metric-label">Report Generation</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">99.2%</div>
+                            <div class="metric-label">Formatting Accuracy</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">3</div>
+                            <div class="metric-label">APIs Integrated</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">CI/CD</div>
+                            <div class="metric-label">Deployment</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DocAI Modal -->
+    <div class="modal-overlay" id="modal-docai">
+        <div class="modal">
+            <button class="modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h3>AI Document Intelligence Engine</h3>
+                <p>BYOK Architecture & RAG Pipeline</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h4><i class="fas fa-exclamation-circle"></i> The Problem</h4>
+                    <p>Free-tier conversational AI platforms strictly limit document uploads and query volumes, leaving students and researchers blocked during critical study sessions. Users needed unrestricted access without hitting paywalls.</p>
+                </div>
+                <div class="modal-section">
+                    <h4><i class="fas fa-lightbulb"></i> The Solution</h4>
+                    <p>I architected a custom web platform integrating OpenAI's API, Retrieval-Augmented Generation (RAG), and OCR scanning with a BYOK (Bring Your Own Key) model. Users plug in their own API keys and bypass standard subscription limits entirely.</p>
+                </div>
+                <div class="modal-section">
+                    <h4><i class="fas fa-sitemap"></i> System Architecture</h4>
+                    <div class="architecture-block">
+<pre>┌─────────────┐     ┌──────────────┐     ┌─────────────┐
+│   Client    │────▶│  Streamlit   │────▶│  ChromaDB   │
+│  (Browser)  │     │   (Python)   │     │  (Vectors)  │
+└─────────────┘     └──────────────┘     └─────────────┘
+                            │
+              ┌─────────────┴─────────────┐
+              ▼                           ▼
+        ┌──────────┐               ┌──────────┐
+        │  OpenAI  │               │   OCR    │
+        │   API    │               │ (Tesseract)
+        │ (BYOK)   │               └──────────┘
+        └──────────┘</pre>
+                    </div>
+                </div>
+                <div class="modal-section">
+                    <h4><i class="fas fa-chart-line"></i> Key Metrics</h4>
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-value">Unlimited</div>
+                            <div class="metric-label">Queries (BYOK)</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">50+</div>
+                            <div class="metric-label">Concurrent Sessions</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">94%</div>
+                            <div class="metric-label">OCR Accuracy</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">&lt;1.2s</div>
+                            <div class="metric-label">Query Response</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Xthetics Modal -->
+    <div class="modal-overlay" id="modal-xthetics">
+        <div class="modal">
+            <button class="modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h3>Xthetics</h3>
+                <p>Performance-Optimized Media Delivery</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h4><i class="fas fa-exclamation-circle"></i> The Problem</h4>
+                    <p>Visual-heavy platforms frequently suffer from slow load times and inefficient media delivery, which severely damages user retention. The client needed a landing page that felt premium without sacrificing performance.</p>
+                </div>
+                <div class="modal-section">
+                    <h4><i class="fas fa-lightbulb"></i> The Solution</h4>
+                    <p>I architected the backend infrastructure for Xthetics using Python and FastAPI, implementing an optimized processing pipeline that dynamically handles, routes, and serves high-resolution visual assets with aggressive caching and compression.</p>
+                </div>
+                <div class="modal-section">
+                    <h4><i class="fas fa-sitemap"></i> System Architecture</h4>
+                    <div class="architecture-block">
 <pre>┌─────────────┐     ┌──────────────┐     ┌─────────────┐
 │   Client    │────▶│   FastAPI    │────▶│  CDN /      │
 │  (Browser)  │     │   (Python)   │     │  Vercel Edge│
@@ -308,26 +409,32 @@
                      │ (Compress +  │
                      │   Resize)    │
                      └──────────────┘</pre>
-                            </div>
-
-                            <h4>Key Metrics</h4>
-                            <ul class="metrics-list">
-                                <li><strong>60%</strong> reduction in page load time (3.2s → 1.3s)</li>
-                                <li><strong>2.4MB → 180KB</strong> average image payload via compression pipeline</li>
-                                <li><strong>100/100</strong> Lighthouse performance score on desktop</li>
-                                <li>Fully responsive across <strong>12+</strong> device breakpoints</li>
-                            </ul>
-                        </div>
                     </div>
-                    <div class="project-links">
-                        <a href="https://xthetics.vercel.app" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
-                        <a href="https://github.com/Prosperiko/xthetics" target="_blank" rel="noopener" class="project-link github"><i class="fab fa-github"></i> View Code</a>
+                </div>
+                <div class="modal-section">
+                    <h4><i class="fas fa-chart-line"></i> Key Metrics</h4>
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-value">60%</div>
+                            <div class="metric-label">Load Time Reduction</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">2.4→0.18MB</div>
+                            <div class="metric-label">Image Payload</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">100</div>
+                            <div class="metric-label">Lighthouse Score</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">12+</div>
+                            <div class="metric-label">Breakpoints</div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
-    </section>
+    </div>
 
     <!-- About -->
     <section id="about">
@@ -434,7 +541,7 @@
                 <div class="timeline-date">October 2025 — Present</div>
                 <div class="timeline-title">Fullstack Engineering Intern Team Lead</div>
                 <div class="timeline-company">Programmify Internship Program (PIP4)</div>
-                <div class="timeline-desc">Directed an engineering team through weekly challenges and intensive "Build Weeks," focusing on rapid prototyping, creative problem-solving, and collaborative development. Ennsuring consistent team communication across platforms, high active engagement and reducing unresponsiveness.</div>
+                <div class="timeline-desc">Directed an engineering team through weekly challenges and intensive "Build Weeks," focusing on rapid prototyping, creative problem-solving, and collaborative development. Ensuring consistent team communication across platforms, high active engagement and reducing unresponsiveness.</div>
             </div>
 
             <div class="timeline-item reveal">
