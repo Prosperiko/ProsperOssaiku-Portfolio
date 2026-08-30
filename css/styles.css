@@ -693,7 +693,7 @@ section {
 }
 
 .project-link.github {
-    color: var(--text-muted);
+    color: var(--text-secondary);
 }
 
 .project-link.github:hover {
