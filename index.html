@@ -108,7 +108,7 @@
                     <img src="img/backgound/gis.webp" alt="Giscopo screenshot" loading="lazy">
                 </div>
                 <div class="project-content">
-                    <div class="project-title">GIScopo — Automated Academic Report Engine</div>
+                    <div class="project-title">GIScopo - Automated Academic Report Engine</div>
                     <div class="project-desc">An automated web application that ingests raw spatial data and programmatically compiles it into clean, structured PDF reports.</div>
                     <div class="project-tags">
                         <span class="project-tag">Python</span>
@@ -134,7 +134,7 @@
                     <img src="img/backgound/fincom.webp" alt="Fincom screenshot" loading="lazy">
                 </div>
                 <div class="project-content">
-                    <div class="project-title">Fincom — Finance Tracker</div>
+                    <div class="project-title">Fincom - Finance Tracker</div>
                     <div class="project-desc">A streamlined expense-tracking application with a robust backend architecture to securely log, categorize, and calculate daily financial transactions.</div>
                     <div class="project-tags">
                         <span class="project-tag">Python</span>
@@ -151,6 +151,35 @@
                     </div>
                 </div>
             </div>
+
+
+                        <!-- DRID Launchpad -->
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <img src="img/backgound/drid.webp" alt="DRID Launchpad screenshot" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">DRID Launchpad - Idea Validation Platform</div>
+                    <div class="project-desc">A full-stack community platform where builders pitch startup ideas, gather upvotes, and debate them in comment threads, with live trending rankings, search, and a demo pipeline that re-seeds itself on every deploy.</div>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Django 6</span>
+                        <span class="project-tag">SQLite</span>
+                        <span class="project-tag">Gunicorn + WhiteNoise</span>
+                        <span class="project-tag">Bootstrap 5</span>
+                        <span class="project-tag">Render</span>
+                    </div>
+                    <button class="case-study-btn" data-modal="modal-drid">
+                        <i class="fas fa-book-open"></i> Read Case Study
+                    </button>
+                    <div class="project-links">
+                        <a href="https://drid-launchpad.onrender.com" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+                        <a href="https://github.com/Prosperiko/DRID-LAUNCHPAD" target="_blank" rel="noopener" class="project-link github"><i class="fab fa-github"></i> View Code</a>
+                    </div>
+                </div>
+            </div>
+
+
 
             <!-- AI Document Intelligence -->
             <div class="project-card reveal reveal-delay-1">
@@ -267,7 +296,7 @@
         <div class="modal">
             <button class="modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
             <div class="modal-header">
-                <h3>GIScopo — Automated Academic Report Engine</h3>
+                <h3>GIScopo - Automated Academic Report Engine</h3>
                 <p>Spatial Data Pipeline & Report Generation</p>
             </div>
             <div class="modal-body">
@@ -319,6 +348,70 @@
             </div>
         </div>
     </div>
+
+
+
+        <!-- DRID Launchpad Modal -->
+    <div class="modal-overlay" id="modal-drid">
+        <div class="modal">
+            <button class="modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h3>DRID Launchpad - Idea Validation Platform</h3>
+                <p>Full-Stack Django Build & Self-Healing Deploy Pipeline</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h4><i class="fas fa-exclamation-circle"></i> The Problem</h4>
+                    <p>Early-stage builders validate ideas in group chats and spreadsheets - feedback scatters across threads, good ideas sink unnoticed, and there's no single place to see which concepts the community actually wants. I wanted a platform where an idea lives or dies on visible community signal, not on who shouts loudest.</p>
+                </div>
+                <div class="modal-section">
+                    <h4><i class="fas fa-lightbulb"></i> The Solution</h4>
+                    <p>I designed and shipped DRID Launchpad end-to-end on Django 6: custom registration built on Django's auth system, idea submission with auto-generated slugs (a duplicate title appends -1, -2 instead of crashing), and a one-vote-per-user rule enforced by a database constraint; not just hidden UI. Upvoting is a single AJAX call with no page reload, Trending ranks by votes then engagement, and edit/delete permissions are checked server-side so a tampered form can't bypass them. Because Render's free tier wipes SQLite on every deploy, I wrote a <code>seed_demo</code> management command that rebuilds all demo data at build time so the site heals itself on every push.</p>
+                </div>
+                <div class="modal-section">
+                    <h4><i class="fas fa-sitemap"></i> System Architecture</h4>
+                    <div class="architecture-block">
+<pre>┌─────────────┐     ┌──────────────┐     ┌─────────────┐
+│   Client    │────▶│   Gunicorn   │────▶│   SQLite    │
+│  (Browser)  │     │  (Django 6)  │     │  (migrated +│
+└─────────────┘     └──────────────┘     │   seeded)   │
+                                         └─────────────┘
+                        │
+                        ▼
+                 ┌──────────────┐
+                 │  WhiteNoise  │
+                 │ (compressed) │
+                 │static assets)│
+                 └──────────────┘</pre>
+                    </div>
+                </div>
+                <div class="modal-section">
+                    <h4><i class="fas fa-chart-line"></i> Key Metrics</h4>
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-value">8</div>
+                            <div class="metric-label">Ideas Auto-Seeded</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">0</div>
+                            <div class="metric-label">Secrets in Code</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">1</div>
+                            <div class="metric-label">Vote/User (DB-Enforced)</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">Auto</div>
+                            <div class="metric-label">Deploy on Every Push</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <!-- DocAI Modal -->
     <div class="modal-overlay" id="modal-docai">
@@ -639,7 +732,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 <a href="https://ossaiku.tech">Prosper Ossaiku</a>. Crafted with curiosity and code.</p>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> <a href="https://ossaiku.tech">Prosper Ossaiku</a>. Crafted with curiosity and code.</p>
     </footer>
 
     <script src="js/main.js"></script>
