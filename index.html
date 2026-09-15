@@ -35,8 +35,6 @@
   gtag('js', new Date());
   gtag('config', 'G-9DHEDC480B');
 </script>
-<base target="_blank">
-<base target="_blank">
 </head>
 
 <body>
@@ -101,13 +99,13 @@
         </div>
         <div class="projects-grid">
 
-            
             <!-- GIScopo -->
             <div class="project-card reveal">
                 <div class="project-image">
                     <img src="img/backgound/gis.webp" alt="Giscopo screenshot" loading="lazy">
                 </div>
                 <div class="project-content">
+                    <div class="project-domain">Geospatial · SaaS</div>
                     <div class="project-title">GIScopo - Automated Academic Report Engine</div>
                     <div class="project-desc">An automated web application that ingests raw spatial data and programmatically compiles it into clean, structured PDF reports.</div>
                     <div class="project-tags">
@@ -134,6 +132,7 @@
                     <img src="img/backgound/fincom.webp" alt="Fincom screenshot" loading="lazy">
                 </div>
                 <div class="project-content">
+                    <div class="project-domain">Fintech · Full-Stack</div>
                     <div class="project-title">Fincom - Finance Tracker</div>
                     <div class="project-desc">A streamlined expense-tracking application with a robust backend architecture to securely log, categorize, and calculate daily financial transactions.</div>
                     <div class="project-tags">
@@ -152,13 +151,13 @@
                 </div>
             </div>
 
-
-                        <!-- DRID Launchpad -->
+            <!-- DRID Launchpad -->
             <div class="project-card reveal">
                 <div class="project-image">
                     <img src="img/backgound/drid.webp" alt="DRID Launchpad screenshot" loading="lazy">
                 </div>
                 <div class="project-content">
+                    <div class="project-domain">Community · Full-Stack</div>
                     <div class="project-title">DRID Launchpad - Idea Validation Platform</div>
                     <div class="project-desc">A full-stack community platform where builders pitch startup ideas, gather upvotes, and debate them in comment threads, with live trending rankings, search, and a demo pipeline that re-seeds itself on every deploy.</div>
                     <div class="project-tags">
@@ -179,14 +178,13 @@
                 </div>
             </div>
 
-
-
             <!-- AI Document Intelligence -->
             <div class="project-card reveal reveal-delay-1">
                 <div class="project-image">
                     <img src="img/backgound/docai.webp" alt="AI Document Intelligence Engine screenshot" loading="lazy">
                 </div>
                 <div class="project-content">
+                    <div class="project-domain">AI · RAG &amp; OCR</div>
                     <div class="project-title">AI Document Intelligence Engine</div>
                     <div class="project-desc">A BYOK platform that allows users to upload documents and query them in real-time using RAG and OCR, bypassing standard subscription limits.</div>
                     <div class="project-tags">
@@ -211,6 +209,7 @@
                     <img src="img/backgound/est.webp" alt="Xthetics screenshot" loading="lazy">
                 </div>
                 <div class="project-content">
+                    <div class="project-domain">Retail · Front-End</div>
                     <div class="project-title">Xthetics</div>
                     <div class="project-desc">A highly interactive, production-ready landing page for a retail brand with optimized media delivery and responsive design.</div>
                     <div class="project-tags">
@@ -239,7 +238,7 @@
         <div class="modal">
             <button class="modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
             <div class="modal-header">
-                <h3>Fincom — Finance Tracker</h3>
+                <h3>Fincom - Finance Tracker</h3>
                 <p>Backend Architecture & Performance Deep Dive</p>
             </div>
             <div class="modal-body">
@@ -349,9 +348,7 @@
         </div>
     </div>
 
-
-
-        <!-- DRID Launchpad Modal -->
+    <!-- DRID Launchpad Modal -->
     <div class="modal-overlay" id="modal-drid">
         <div class="modal">
             <button class="modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
@@ -380,8 +377,8 @@
                         ▼
                  ┌──────────────┐
                  │  WhiteNoise  │
-                 │ (compressed) │
-                 │static assets)│
+                 │ (compressed  │
+                 │static files) │
                  └──────────────┘</pre>
                     </div>
                 </div>
@@ -409,9 +406,6 @@
             </div>
         </div>
     </div>
-
-
-
 
     <!-- DocAI Modal -->
     <div class="modal-overlay" id="modal-docai">
@@ -492,16 +486,15 @@
                 <div class="modal-section">
                     <h4><i class="fas fa-sitemap"></i> System Architecture</h4>
                     <div class="architecture-block">
-<pre>┌─────────────┐     ┌─────────────┐
-│   Client    │────▶│
-│  (Browser)  │     │  Vercel Edge│
-└─────────────┘     └─────────────┘
+<pre>┌─────────────┐     ┌──────────────┐
+│   Client    │────▶│ Vercel Edge  │
+│  (Browser)  │     │ (CDN + HTTPS)│
+└─────────────┘     └──────────────┘
                             │
                             ▼
                      ┌──────────────┐
-                     │  Image Opt.  │
-                     │ (Compress +  │
-                     │   Resize)    │
+                     │  Compressed  │
+                     │  WebP Images │
                      └──────────────┘</pre>
                     </div>
                 </div>
@@ -539,11 +532,11 @@
         <div class="about-grid">
             <div class="about-text reveal">
 
-                <p>I specialize in building robust backend systems, data pipelines, and AI-driven platforms. Using <strong>Python, Django, FastAPI</strong>, and data tools like <strong>Pandas</strong>, I transform complex business problems into scalable, highly-available infrastructure. </p>
+                <p>I specialize in building backend systems, data pipelines, and AI-driven platforms. Using <strong>Python, Django, FastAPI</strong>, and data tools like <strong>Pandas</strong>, I turn complex business problems into scalable, reliable infrastructure.</p>
 
-                <p>I don't just write code; I build solutions, lead engineering teams, and leverage Agentic AI as a multiplier to deliver 10x results. From deploying revenue-generating web apps to orchestrating databases and local AI models, I thrive at the intersection of backend logic and machine learning.</p>
+                <p>I've led backend teams at Cowrywise and in internship programs, shipped production services in FastAPI and Django, and run a campus campaign that reached every student email at UNIBEN.</p>
 
-                <p>Driven by curiosity and a relentless pursuit of knowledge, my mission is to build impactful tools that inspire and empower people everywhere.</p>
+                <p>I'm driven by curiosity and and the achievments of others. If it solves a real problem for real people, I want to build it.</p>
             </div>
             <div class="about-stats reveal reveal-delay-1">
                 <div class="stat-card">
@@ -588,7 +581,6 @@
                 <h3>AI & Machine Learning</h3>
                 <div class="skill-tags">
                     <span class="skill-tag">Agentic Workflows</span>
-                    <span class="skill-tag">Google Trained</span>
                     <span class="skill-tag">Local/Offline Model Deployment</span>
                     <span class="skill-tag">OpenAI Integration</span>
                     <span class="skill-tag">Scikit-Learn</span>
@@ -628,21 +620,21 @@
                 <div class="timeline-date">March 2026 — Present</div>
                 <div class="timeline-title">Skill based Backend Engineering Team Lead</div>
                 <div class="timeline-company">Cowrywise</div>
-                <div class="timeline-desc">Engineered and shipped 3+ lightweight microservices and external API integrations using FastAPI, optimizing data retrieval and backend communication while leading a team of backend developers, managing project deliverables, and resolving technical challenges.</div>
+                <div class="timeline-desc">Lead a 4-person backend team, shipping 3+ lightweight microservices and external API integrations in FastAPI to optimize data retrieval and backend communication — while managing sprint deliverables and resolving technical escalations.</div>
             </div>
 
             <div class="timeline-item reveal">
-                <div class="timeline-date">October 2025 — Present</div>
+                <div class="timeline-date">October 2025 — December 2025</div>
                 <div class="timeline-title">Fullstack Engineering Intern Team Lead</div>
                 <div class="timeline-company">Programmify Internship Program (PIP4)</div>
-                <div class="timeline-desc">Directed an engineering team through weekly challenges and intensive "Build Weeks," focusing on rapid prototyping, creative problem-solving, and collaborative development. Ensuring consistent team communication across platforms, high active engagement and reducing unresponsiveness.</div>
+                <div class="timeline-desc">Led a 5-person engineering team through weekly challenges and intensive Build Weeks, owning deliverables and unblocking technical issues. When a submission deadline nearly slipped, I introduced daily check-ins to keep part-time teammates aligned — we shipped on time.</div>
             </div>
 
             <div class="timeline-item reveal">
                 <div class="timeline-date">October 2025 — April 2026</div>
                 <div class="timeline-title">Hult Prize Campus Director</div>
                 <div class="timeline-company">Hult Prize UNIBEN</div>
-                <div class="timeline-desc">Spearheaded community tech initiatives and innovations, managed executive teams, and drove technical content campaigns to a global audience.</div>
+                <div class="timeline-desc">Drove campus-wide outreach for one of the world's largest student startup competitions: partnered with the university webmaster to reach every UNIBEN student through official school email, then amplified across Instagram, LinkedIn, and WhatsApp communities of 500+ members each. <a href="https://www.linkedin.com/feed/update/urn:li:activity:7459610547127439360/">See post</a>.</div>
             </div>
 
             <div class="timeline-item reveal">
@@ -654,9 +646,9 @@
 
             <div class="timeline-item reveal">
                 <div class="timeline-date">June 2026 — Present</div>
-                <div class="timeline-title">Freelance Software Developer & Python Tutor</div>
+                <div class="timeline-title">Freelance Software Developer</div>
                 <div class="timeline-company">Freelance</div>
-                <div class="timeline-desc">Engineering and deploying responsive, production-ready brand pages, managing the end-to-end development lifecycle from client requirements to hosting also provided structured 1-on-1 Python mentorship, architecting mobile-compiler-friendly assignments to make complex programming concepts accessible without traditional desktop environments.</div>
+                <div class="timeline-desc">Engineering and deploying responsive, production-ready brand pages end-to-end — from client requirements to hosting and handoff.</div>
             </div>
 
             <div class="timeline-item reveal">
@@ -677,6 +669,28 @@
                 <div class="timeline-title">Data Analyst Intern</div>
                 <div class="timeline-company">KultureHire — India</div>
                 <div class="timeline-desc">Completed a capstone project analyzing business data, presented through comprehensive Power BI dashboards and reports. Enhanced communication skills by effectively presenting complex technical findings to non-technical audiences.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beyond the Code -->
+    <section id="beyond">
+        <div class="section-header reveal">
+            <div class="section-label">Beyond the Code</div>
+            <h2 class="section-title">Where Else I Show Up</h2>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-date">Writing</div>
+                <div class="timeline-title"><a href="https://www.linkedin.com/pulse/tech-startup-resource-directory-save-message-prosper-ossaiku--jq6lf/">The Tech Resource</a></div>
+                <div class="timeline-company">Published on LinkedIn</div>
+                <div class="timeline-desc">A curated directory of tools and resources for students, developers, and startups — the stuff I wish someone had handed me earlier, in one place. <a href="https://github.com/Prosperiko/The-Tech-Startup-Resource-Directory">Browse the repo</a>.</div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-date">Volunteering</div>
+                <div class="timeline-title"><a href="https://www.linkedin.com/posts/prosper-ossaiku_eyif-eyif20-edoyouthimpactforum-ugcPost-7497281647969497088-eYu-/">Media &amp; Communications Volunteer</a></div>
+                <div class="timeline-company">EYIF 2.0</div>
+                <div class="timeline-desc">Worked with the media support team to handle photography, videography, and social media management because products aren't the only things worth capturing well.</div>
             </div>
         </div>
     </section>
